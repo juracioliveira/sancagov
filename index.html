@@ -4,44 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SancaGov explicado | Guia independente para moradores de São Caetano do Sul</title>
-    <meta name="description"
-        content="Como fazer o cadastro no SancaGov, quem paga ônibus desde julho de 2026, o que a Justiça decidiu sobre saúde e escola, e os telefones úteis de São Caetano do Sul. Guia independente.">
-    <meta name="theme-color" content="#f4f0e6">
-    <meta property="og:title" content="SancaGov, explicado sem rodeio">
-    <meta property="og:description" content="Cadastro, ônibus, saúde e escola: o que vale hoje em São Caetano do Sul.">
-    <meta property="og:image" content="img/cidade-verticalizacao.jpg">
+    <title>SancaGov Fan Hub | A Revolução Digital de São Caetano do Sul</title>
+    <meta name="description" content="Portal celebrando o SancaGov — plataforma de identidade digital de São Caetano do Sul. 710 câmeras Smart Sanca, Tarifa Zero exclusivo para moradores, +200 foragidos capturados e 172 mil cidadãos conectados.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+    <!-- Estilos Customizados -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Schema.org Rich Snippets (SEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "Quem pode se cadastrar no SancaGov?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Qualquer morador de São Caetano do Sul com CPF. Desde 8 de junho de 2026 o cadastro está aberto a todos os moradores, pelo site sancagov.saocaetanodosul.sp.gov.br." }
+          "@type": "WebSite",
+          "@id": "https://sancagov-fanhub.com.br/#website",
+          "url": "https://sancagov-fanhub.com.br",
+          "name": "SancaGov Fan Hub",
+          "description": "Portal independente celebrando a inovação digital e os serviços públicos integrados de São Caetano do Sul."
         },
         {
-          "@type": "Question",
-          "name": "Preciso do SancaGov para ir ao posto de saúde ou matricular meu filho?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Não, por enquanto. Uma liminar do TJSP, mantida em 8 de julho de 2026, impede que o cadastro seja exigido para saúde e educação. Ele continua exigido para o Tarifa Zero." }
-        },
-        {
-          "@type": "Question",
-          "name": "Quem paga ônibus municipal em São Caetano do Sul?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Desde 15 de julho de 2026 (Decreto 12.285/2026), viaja de graça quem tem SancaGov aprovado e quem se encaixa nas exceções, como idosos a partir de 60 anos e estudantes de algumas instituições. Os demais pagam R$ 5,00 por viagem." }
-        },
-        {
-          "@type": "Question",
-          "name": "Não tenho celular com câmera. Como faço o cadastro?",
-          "acceptedAnswer": { "@type": "Answer", "text": "O site também abre no computador, e o Atende Fácil faz atendimento presencial na Rua Major Carlo Del Prete, 651, Centro, telefone (11) 4232-8888." }
+          "@type": "FAQPage",
+          "@id": "https://sancagov-fanhub.com.br/#faq",
+          "isPartOf": { "@id": "https://sancagov-fanhub.com.br/#website" },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quem pode usar o SancaGov?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Todos os moradores de São Caetano do Sul com CPF válido podem se cadastrar no SancaGov. O cadastro é feito digitalmente pelo celular com validação por reconhecimento facial."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona o Tarifa Zero a partir de julho de 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Desde 15 de julho de 2026, o Tarifa Zero é exclusivo para moradores cadastrados no SancaGov. Não-moradores sem exceções passam a pagar R$ 5,00 por viagem. Existem exceções como idosos 60+, servidores públicos de SCS, pacientes oncológicos, forças de segurança uniformizadas e estudantes de USCS, Fundação das Artes, SESI, SENAI, ETEC, FATEC, IMT e Faculdade Paulista de Serviço Social."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "E quanto à decisão judicial que suspendeu a exigência do cadastro?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No dia 8 de julho de 2026, o Órgão Especial do TJSP manteve a decisão liminar que suspende a exigência do cadastramento SancaGov para acesso a serviços essenciais e universais, como saúde e educação públicas. A suspensão vale para esses serviços essenciais, porém para o Tarifa Zero a exigência do SancaGov continua ativa para moradores de São Caetano do Sul."
+              }
+            }
+          ]
         }
       ]
     }
@@ -49,543 +67,1352 @@
 </head>
 
 <body>
+    <!-- Barra de progresso de leitura -->
+    <div class="reading-progress" id="readingProgress"></div>
 
-    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <!-- Partículas / Brilhos de Fundo para Efeito Premium -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="bg-glow-3"></div>
 
-    <!-- Cabeçalho de jornal -->
-    <header class="masthead">
-        <div class="wrap">
-            <div class="mast-top">
-                <span>São Caetano do Sul, SP</span>
-                <span class="mast-mid">Guia independente · não é o site da Prefeitura</span>
-                <a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Portal oficial ↗</a>
-            </div>
-            <a href="#" class="nameplate" aria-label="sancagov.com.br, início">sancagov<span>.com.br</span></a>
-            <p class="mast-tag">O que muda para quem mora, estuda ou trabalha em São Caetano do Sul</p>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">
+                <span class="material-icons-outlined">domain</span>
+            </span>
+            <span class="logo-text">Sanca<span class="highlight">Gov</span><span class="badge">FAN HUB</span></span>
         </div>
-    </header>
-
-    <nav class="sections" aria-label="Seções da página">
-        <div class="wrap sections-inner">
-            <a href="#cadastro">Cadastro</a>
-            <a href="#onibus">Ônibus</a>
-            <a href="#justica">Saúde e escola</a>
-            <a href="#smart-sanca">Smart Sanca</a>
-            <a href="#cronologia">Cronologia</a>
-            <a href="#perguntas">Perguntas</a>
-            <a href="#servico">Serviço</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#sobre" class="nav-link">A Cidade</a>
+            <a href="#beneficios" class="nav-link">Benefícios</a>
+            <a href="#smart-sanca" class="nav-link">Smart Sanca</a>
+            <a href="#simulador" class="nav-link">Tarifa Zero</a>
+            <a href="#cadastro" class="nav-link">Cadastro</a>
+            <a href="#expansao" class="nav-link">Expansão</a>
+            <a href="#faq" class="nav-link">FAQ</a>
         </div>
+        <a href="https://sancagov.saocaetanodosul.sp.gov.br" target="_blank" class="btn-primary">
+            Portal Oficial
+            <span class="material-icons-outlined">open_in_new</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
-    <main id="conteudo">
-
-        <!-- Primeira página -->
-        <section class="front wrap">
-            <article class="lead">
-                <p class="kicker">Cadastro digital</p>
-                <h1>SancaGov, explicado sem rodeio</h1>
-                <p class="deck">
-                    O cadastro da Prefeitura liga o morador, pelo CPF e por uma foto do rosto, a ônibus,
-                    saúde e escola. Desde julho, ele decide quem paga a passagem. Veja o que vale hoje
-                    e o que fazer.
+    <main>
+        <!-- ===================== HERO SECTION ===================== -->
+        <header class="hero">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="material-icons-outlined tag-icon">auto_awesome</span>
+                    <span>Plataforma Digital do Cidadão — Lançada em 2026</span>
+                </div>
+                <h1 class="fade-in-up">Identidade Digital Unificada na Cidade com Maior IDH do Brasil</h1>
+                <p class="subtitle fade-in-up" style="animation-delay: 0.1s;">
+                    Celebrando o <strong>SancaGov</strong>, a plataforma da Prefeitura de São Caetano do Sul que integra 
+                    reconhecimento facial, <strong>Tarifa Zero</strong> para moradores, prontuário de saúde e educação — 
+                    tudo vinculado ao CPF do cidadão, sob gestão do Prefeito <strong>Tite Campanella</strong>.
                 </p>
-                <figure class="photo photo-lead">
-                    <img src="img/cidade-verticalizacao.jpg"
-                        srcset="img/cidade-verticalizacao-640.jpg 640w, img/cidade-verticalizacao.jpg 1280w"
-                        sizes="(max-width: 960px) 100vw, 700px" width="1280" height="960"
-                        alt="Vista de São Caetano do Sul do alto, com casas de telhado vermelho em primeiro plano e prédios ao fundo.">
-                    <figcaption>
-                        São Caetano do Sul tem cerca de 172 mil moradores em 15,3&nbsp;km², a menor área entre os
-                        municípios do país.
-                        <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
-                    </figcaption>
-                </figure>
-            </article>
+                
+                <div class="hero-stats fade-in-up" style="animation-delay: 0.15s;">
+                    <div class="stat-card">
+                        <div class="stat-val">0,862</div>
+                        <div class="stat-lbl">IDH Municipal (IBGE)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val">R$ 0</div>
+                        <div class="stat-lbl">Tarifa Zero p/ Moradores</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val">172 mil</div>
+                        <div class="stat-lbl">Habitantes (est. 2025)</div>
+                    </div>
+                </div>
 
-            <aside class="rail" aria-labelledby="hoje-title">
-                <h2 class="rail-title" id="hoje-title">Como está hoje</h2>
-                <dl class="briefs">
-                    <div>
-                        <dt>Cadastro</dt>
-                        <dd>Aberto a todos os moradores desde 8 de junho de 2026.</dd>
-                    </div>
-                    <div>
-                        <dt>Ônibus municipal</dt>
-                        <dd>Grátis com SancaGov aprovado ou nas exceções. Os demais pagam R$&nbsp;5,00.</dd>
-                    </div>
-                    <div>
-                        <dt>Saúde e escola</dt>
-                        <dd>O cadastro <em>não</em> pode ser exigido, por decisão do TJSP.</dd>
-                    </div>
-                    <div>
-                        <dt>Sem internet?</dt>
-                        <dd>Atende Fácil, Rua Major Carlo Del Prete, 651, Centro.</dd>
-                    </div>
-                </dl>
+                <div class="hero-actions fade-in-up" style="animation-delay: 0.2s;">
+                    <a href="#app-showcase" class="btn-primary-large">
+                        <span class="material-icons-outlined">phone_android</span>
+                        Explorar o Aplicativo
+                    </a>
+                    <a href="#cadastro" class="btn-secondary-large">
+                        Como se Cadastrar
+                    </a>
+                </div>
+            </div>
 
-                <h2 class="rail-title">Nesta página</h2>
-                <ol class="index">
-                    <li><a href="#cadastro"><span>Como fazer o cadastro</span><b>1</b></a></li>
-                    <li><a href="#onibus"><span>Você paga ônibus? Teste em 2 perguntas</span><b>2</b></a></li>
-                    <li><a href="#justica"><span>Posto e escola podem exigir o cadastro?</span><b>3</b></a></li>
-                    <li><a href="#smart-sanca"><span>O que é o Smart Sanca</span><b>4</b></a></li>
-                    <li><a href="#servico"><span>Telefones e endereços</span><b>7</b></a></li>
-                </ol>
+            <!-- INTERACTIVE PHONE MOCKUP -->
+            <div class="hero-visual fade-in-up" style="animation-delay: 0.3s;" id="app-showcase">
+                <div class="phone-wrapper">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <!-- App Header -->
+                        <div class="app-header">
+                            <div class="app-info">
+                                <span class="material-icons-outlined app-logo-icon">fingerprint</span>
+                                <div>
+                                    <div class="app-title">SancaGov</div>
+                                    <div class="app-subtitle">São Caetano do Sul</div>
+                                </div>
+                            </div>
+                            <div class="app-user">
+                                <span class="material-icons-outlined">account_circle</span>
+                            </div>
+                        </div>
 
-                <p class="rail-note">
-                    O cadastro oficial é feito só em
-                    <a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">sancagov.saocaetanodosul.sp.gov.br</a>.
-                </p>
-            </aside>
+                        <!-- App Content Display (Dynamic via JS) -->
+                        <div class="app-content" id="app-screen-content">
+                            <!-- HOME SCREEN (Default) -->
+                            <div class="screen-view active" id="screen-home">
+                                <div class="welcome-box">
+                                    <h3>Olá, Morador!</h3>
+                                    <p>Bem-vindo ao seu painel unificado de São Caetano do Sul. Gestão Tite Campanella.</p>
+                                    <div class="user-status-pill">
+                                        <span class="dot-green"></span> Cadastro Biométrico Ativo
+                                    </div>
+                                </div>
+
+                                <div class="quick-stats-row">
+                                    <div class="quick-stat">
+                                        <div class="qs-title">Saúde</div>
+                                        <div class="qs-desc">Prontuário Ok</div>
+                                    </div>
+                                    <div class="quick-stat">
+                                        <div class="qs-title">Transporte</div>
+                                        <div class="qs-desc">Tarifa Zero ✓</div>
+                                    </div>
+                                </div>
+
+                                <div class="notification-card">
+                                    <div class="notif-header">
+                                        <span class="material-icons-outlined notif-icon">directions_bus</span>
+                                        <strong>Tarifa Zero Ativo</strong>
+                                    </div>
+                                    <p>Seu passe gratuito está ativo. Exclusivo para moradores cadastrados no SancaGov desde 15/07/2026.</p>
+                                </div>
+
+                                <div class="notif-alert-box">
+                                    <span class="material-icons-outlined">info</span>
+                                    <span>Toque nas abas abaixo para explorar os módulos!</span>
+                                </div>
+                            </div>
+
+                            <!-- SAÚDE SCREEN -->
+                            <div class="screen-view" id="screen-saude">
+                                <div class="screen-title-row">
+                                    <span class="material-icons-outlined text-blue">health_and_safety</span>
+                                    <h4>Portal da Saúde</h4>
+                                </div>
+                                <p class="screen-desc">Consultas, exames e medicamentos da rede municipal integrados.</p>
+
+                                <div class="screen-card">
+                                    <div class="card-item">
+                                        <span class="material-icons-outlined text-green">event_available</span>
+                                        <div>
+                                            <strong>Clínico Geral - UBS Centro</strong>
+                                            <span>Agendado para: 18/07 às 14:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="screen-card">
+                                    <div class="card-item">
+                                        <span class="material-icons-outlined text-orange">medication</span>
+                                        <div>
+                                            <strong>Retirada de Medicamentos</strong>
+                                            <span>2 receitas disponíveis na farmácia municipal</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn-app-action">Solicitar Telemedicina</button>
+                            </div>
+
+                            <!-- EDUCAÇÃO SCREEN -->
+                            <div class="screen-view" id="screen-educacao">
+                                <div class="screen-title-row">
+                                    <span class="material-icons-outlined text-red">school</span>
+                                    <h4>Portal da Educação</h4>
+                                </div>
+                                <p class="screen-desc">Acompanhe seus dependentes na rede municipal de ensino.</p>
+
+                                <div class="student-profile">
+                                    <div class="student-avatar">LG</div>
+                                    <div class="student-details">
+                                        <strong>Lucas G. Oliveira</strong>
+                                        <span>7º Ano - EMEF Prof. Vicente Bastos</span>
+                                    </div>
+                                </div>
+
+                                <div class="report-card">
+                                    <div class="report-row">
+                                        <span>Matemática:</span> <strong>8.5</strong>
+                                    </div>
+                                    <div class="report-row">
+                                        <span>Português:</span> <strong>9.0</strong>
+                                    </div>
+                                    <div class="report-row">
+                                        <span>Frequência:</span> <strong class="text-green">96%</strong>
+                                    </div>
+                                </div>
+
+                                <button class="btn-app-action">Ver Boletim Completo</button>
+                            </div>
+
+                            <!-- TRANSPORTE SCREEN -->
+                            <div class="screen-view" id="screen-transporte">
+                                <div class="screen-title-row">
+                                    <span class="material-icons-outlined text-green">directions_bus</span>
+                                    <h4>Tarifa Zero</h4>
+                                </div>
+                                <p class="screen-desc">Gratuidade exclusiva para moradores de São Caetano do Sul cadastrados no SancaGov.</p>
+
+                                <div class="qr-box">
+                                    <div class="qr-code">
+                                        <div class="qr-square"></div>
+                                    </div>
+                                    <span class="qr-caption">Apresente este QR Code no validador do ônibus</span>
+                                </div>
+
+                                <div class="bus-tracker">
+                                    <div class="tracker-header">
+                                        <span class="pulse-dot"></span>
+                                        <strong>Linha 01 - Circular Centro</strong>
+                                    </div>
+                                    <span class="tracker-eta">Próximo ônibus chegando em 4 minutos</span>
+                                </div>
+                            </div>
+
+                            <!-- SEGURANÇA SCREEN -->
+                            <div class="screen-view" id="screen-seguranca">
+                                <div class="screen-title-row">
+                                    <span class="material-icons-outlined text-orange">shield</span>
+                                    <h4>Smart Sanca & GCM</h4>
+                                </div>
+                                <p class="screen-desc">Integração com o Smart Sanca — Centro de Inteligência e Segurança.</p>
+
+                                <div class="sos-card">
+                                    <button class="sos-btn" id="sosTrigger">
+                                        <span class="material-icons-outlined">campaign</span>
+                                        <span>BOTÃO SOS</span>
+                                    </button>
+                                    <span class="sos-desc">Clique para acionar socorro emergencial da GCM via Smart Sanca</span>
+                                </div>
+
+                                <div class="cam-feed">
+                                    <div class="cam-status"><span class="red-dot"></span> Câmera Ao Vivo - Av. Goiás</div>
+                                    <div class="cam-placeholder">
+                                        <span class="material-icons-outlined">videocam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- App Bottom Navigation -->
+                        <div class="app-nav">
+                            <button class="app-nav-item active" data-screen="home">
+                                <span class="material-icons-outlined">home</span>
+                                <span>Início</span>
+                            </button>
+                            <button class="app-nav-item" data-screen="saude">
+                                <span class="material-icons-outlined">health_and_safety</span>
+                                <span>Saúde</span>
+                            </button>
+                            <button class="app-nav-item" data-screen="educacao">
+                                <span class="material-icons-outlined">school</span>
+                                <span>Educação</span>
+                            </button>
+                            <button class="app-nav-item" data-screen="transporte">
+                                <span class="material-icons-outlined">directions_bus</span>
+                                <span>Tarifa</span>
+                            </button>
+                            <button class="app-nav-item" data-screen="seguranca">
+                                <span class="material-icons-outlined">shield</span>
+                                <span>GCM</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===================== NEWS TICKER / MARQUEE ===================== -->
+        <section class="news-ticker">
+            <div class="ticker-track" id="tickerTrack">
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">videocam</span>
+                    <span><strong>Smart Sanca 1 ano:</strong> 710 câmeras integradas e mais de 200 foragidos capturados com reconhecimento facial</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">campaign</span>
+                    <span><strong>Tarifa Zero exclusivo:</strong> desde 15/07/2026, apenas moradores cadastrados no SancaGov viajam gratuitamente</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">trending_up</span>
+                    <span><strong>Impacto:</strong> demanda do transporte cresceu 300% (de 20 mil para 80 mil passageiros/dia) — economia de R$ 15 mi/ano</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">gavel</span>
+                    <span><strong>TJSP (08/07/2026):</strong> Tribunal mantém liminar — exigência do SancaGov para saúde e educação continua suspensa</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">how_to_reg</span>
+                    <span><strong>Fase 4 aberta (08/06):</strong> todos os moradores de SCS já podem fazer o cadastro no SancaGov</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">phone_in_talk</span>
+                    <span><strong>Emergência Smart Sanca:</strong> ligue 0800 7000 156 — central integrada com GCM, PM e Defesa Civil 24h</span>
+                </div>
+                <!-- Duplicatas para scroll contínuo -->
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">videocam</span>
+                    <span><strong>Smart Sanca 1 ano:</strong> 710 câmeras integradas e mais de 200 foragidos capturados com reconhecimento facial</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">campaign</span>
+                    <span><strong>Tarifa Zero exclusivo:</strong> desde 15/07/2026, apenas moradores cadastrados no SancaGov viajam gratuitamente</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">trending_up</span>
+                    <span><strong>Impacto:</strong> demanda do transporte cresceu 300% (de 20 mil para 80 mil passageiros/dia) — economia de R$ 15 mi/ano</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">gavel</span>
+                    <span><strong>TJSP (08/07/2026):</strong> Tribunal mantém liminar — exigência do SancaGov para saúde e educação continua suspensa</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">how_to_reg</span>
+                    <span><strong>Fase 4 aberta (08/06):</strong> todos os moradores de SCS já podem fazer o cadastro no SancaGov</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="material-icons-outlined">phone_in_talk</span>
+                    <span><strong>Emergência Smart Sanca:</strong> ligue 0800 7000 156 — central integrada com GCM, PM e Defesa Civil 24h</span>
+                </div>
+            </div>
         </section>
 
-        <!-- 1. Cadastro -->
-        <article class="story wrap" id="cadastro">
-            <header class="story-head">
-                <p class="kicker"><span class="num">1</span> Passo a passo</p>
-                <h2>Como fazer o cadastro, do celular, em poucos minutos</h2>
-                <p class="deck">Tenha à mão o CPF e um comprovante de endereço. Não é preciso ir a um posto.</p>
-            </header>
-            <div class="story-grid">
-                <div class="story-body">
-                    <ol class="steps">
-                        <li>
-                            <strong>Entre no site oficial.</strong>
-                            Acesse <a href="https://sancagov.saocaetanodosul.sp.gov.br"
-                                rel="noopener">sancagov.saocaetanodosul.sp.gov.br</a> pelo celular ou computador.
-                        </li>
-                        <li>
-                            <strong>Preencha seus dados.</strong>
-                            CPF, endereço e informações pessoais. O sistema confere se você mora em São Caetano.
-                        </li>
-                        <li>
-                            <strong>Tire uma foto do rosto.</strong>
-                            Pela câmera do celular, em lugar claro, sem óculos escuros ou boné. É ela que confirma
-                            que o cadastro é seu.
-                        </li>
-                        <li>
-                            <strong>Aguarde a aprovação.</strong>
-                            A liberação foi feita em fases: programas sociais (SEAIS), idosos dos CISEs, estudantes
-                            da rede municipal e bolsistas e, desde 8 de junho, todos os moradores.
-                        </li>
-                    </ol>
-                    <p><a class="button" href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Ir para o
-                            cadastro oficial</a></p>
-                </div>
-                <aside class="box">
-                    <p class="box-title">Sem celular ou sem jeito com a internet?</p>
-                    <p>O Atende Fácil faz o cadastro com você, pessoalmente.</p>
-                    <p><strong>Rua Major Carlo Del Prete, 651, Centro</strong><br>
-                        <a href="tel:1142328888">(11) 4232-8888</a></p>
-                </aside>
+        <!-- ===================== SOBRE SÃO CAETANO DO SUL ===================== -->
+        <section id="sobre" class="sobre-section reveal">
+            <div class="section-header">
+                <div class="sim-badge" style="background: rgba(139,92,246,0.1); color: #a78bfa; border-color: rgba(139,92,246,0.2);">Conheça a Cidade</div>
+                <h2>São Caetano do Sul em Dados Reais</h2>
+                <p>Localizada no coração do ABC Paulista, São Caetano é o menor município em área do Brasil, mas líder absoluto em desenvolvimento humano.</p>
             </div>
-        </article>
-
-        <!-- 2. Ônibus -->
-        <article class="story wrap" id="onibus">
-            <header class="story-head">
-                <p class="kicker"><span class="num">2</span> Tarifa Zero</p>
-                <h2>Desde julho, só o morador cadastrado anda de graça</h2>
-                <p class="deck">
-                    Com a gratuidade aberta a todos, os passageiros por dia passaram de cerca de 20 mil para 80 mil.
-                    O Decreto 12.285/2026 restringiu o benefício a partir de 15 de julho.
-                </p>
-            </header>
-
-            <figure class="photo photo-wide">
-                <img src="img/av-goias-onibus.jpg"
-                    srcset="img/av-goias-onibus-640.jpg 640w, img/av-goias-onibus.jpg 1280w"
-                    sizes="(max-width: 1100px) 100vw, 1060px" width="1280" height="960" loading="lazy"
-                    alt="Ônibus municipal passando pela Avenida Goiás, com canteiro central florido e palmeiras.">
-                <figcaption>
-                    Avenida Goiás, um dos principais corredores de ônibus da cidade.
-                    <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
-                </figcaption>
-            </figure>
-
-            <div class="story-grid">
-                <div class="story-body">
-                    <p class="dropcap">
-                        Quem não mora em São Caetano, ou mora mas ainda não teve o cadastro aprovado, paga
-                        R$&nbsp;5,00 por viagem nos ônibus municipais. A regra tem exceções: alguns grupos continuam
-                        com gratuidade mesmo sem o SancaGov.
-                    </p>
-
-                    <h3 id="excecoes">Quem tem gratuidade sem o cadastro</h3>
-                    <ul class="columns">
-                        <li>Idosos a partir de 60 anos</li>
-                        <li>Servidores públicos de São Caetano</li>
-                        <li>Pacientes oncológicos em tratamento</li>
-                        <li>Forças de segurança uniformizadas e Tiro de Guerra</li>
-                        <li>Estudantes da USCS</li>
-                        <li>Estudantes da Fundação das Artes</li>
-                        <li>Estudantes do SESI e do SENAI</li>
-                        <li>Estudantes de ETEC e FATEC</li>
-                        <li>Estudantes do Instituto Mauá de Tecnologia</li>
-                        <li>Estudantes da Faculdade Paulista de Serviço Social</li>
-                    </ul>
-
-                    <h3 id="pedir-cartao">Não mora na cidade, mas está nas exceções?</h3>
-                    <p>Peça o cartão de gratuidade pelo Atende Fácil:</p>
-                    <ol class="mini-steps">
-                        <li>Entre em <a href="https://afweb.saocaetanodosul.sp.gov.br"
-                                rel="noopener">afweb.saocaetanodosul.sp.gov.br</a> e faça login.</li>
-                        <li>Clique em “Nova Solicitação” e escolha o departamento SEAIS.</li>
-                        <li>Selecione “cadastro de não moradores para aquisição de cartão de gratuidade”.</li>
-                    </ol>
-                </div>
-
-                <aside class="box box-checker">
-                    <form class="checker" id="checker" aria-labelledby="checker-title">
-                        <p class="box-title" id="checker-title">Teste: você paga ônibus?</p>
-
-                        <fieldset data-step="mora">
-                            <legend>Você mora em São Caetano do Sul?</legend>
-                            <div class="choices">
-                                <label><input type="radio" name="mora" value="sim"> Sim</label>
-                                <label><input type="radio" name="mora" value="nao"> Não</label>
-                            </div>
-                        </fieldset>
-
-                        <fieldset data-step="cadastro" hidden>
-                            <legend>Seu cadastro no SancaGov já foi aprovado?</legend>
-                            <div class="choices">
-                                <label><input type="radio" name="cadastro" value="sim"> Sim</label>
-                                <label><input type="radio" name="cadastro" value="nao"> Ainda não</label>
-                            </div>
-                        </fieldset>
-
-                        <fieldset data-step="excecao" hidden>
-                            <legend>Você está em alguma das <a href="#excecoes">exceções</a>?</legend>
-                            <div class="choices">
-                                <label><input type="radio" name="excecao" value="sim"> Sim</label>
-                                <label><input type="radio" name="excecao" value="nao"> Não</label>
-                            </div>
-                        </fieldset>
-
-                        <div class="result" id="result" role="status" aria-live="polite" hidden></div>
-
-                        <button type="reset" class="link-button" id="checker-reset" hidden>Recomeçar</button>
-                    </form>
-                </aside>
-            </div>
-        </article>
-
-        <!-- 3. Justiça -->
-        <article class="story wrap" id="justica">
-            <header class="story-head">
-                <p class="kicker"><span class="num">3</span> Saúde e escola</p>
-                <h2>Posto e escola não podem exigir o cadastro</h2>
-                <p class="deck">A Justiça suspendeu a exigência para serviços universais. A decisão ainda é provisória.
-                </p>
-            </header>
-            <div class="story-grid">
-                <div class="story-body">
-                    <p class="dropcap">
-                        Em maio de 2026 o Tribunal de Justiça de São Paulo suspendeu, em caráter liminar, a exigência
-                        do SancaGov para saúde e educação, por serem serviços que a Constituição garante a todos.
-                        Em 8 de julho o Órgão Especial do TJSP negou o recurso da Prefeitura e manteve a liminar.
+            <div class="sobre-grid">
+                <div class="sobre-text">
+                    <h3>O Município com Maior IDH do Brasil</h3>
+                    <p>
+                        Com <strong>IDH de 0,862</strong> segundo dados do IBGE, São Caetano do Sul se mantém como referência nacional em qualidade de vida, 
+                        educação, saúde e renda per capita. Seu território de apenas <strong>15,3 km²</strong> abriga mais de <strong>172 mil habitantes</strong> 
+                        (estimativa IBGE 2025), tornando-a uma das cidades mais densas do Estado de São Paulo.
                     </p>
                     <p>
-                        O processo ainda não terminou, e a regra pode mudar. Para o Tarifa Zero, a exigência do
-                        cadastro continua valendo.
-                    </p>
-                    <p>
-                        Quem tem o cadastro continua podendo usar as funções do aplicativo: prontuário, receitas e
-                        vacinas, e notas e frequência dos filhos na rede municipal.
+                        Sob a gestão do Prefeito <strong>Tite Campanella</strong>, eleito em 2024 e empossado em janeiro de 2025, 
+                        a cidade acelerou sua transformação digital com o lançamento do <strong>SancaGov</strong> em 2026 — 
+                        uma plataforma de identidade unificada do cidadão que conecta saúde, educação, transporte e segurança 
+                        em um único cadastro vinculado ao CPF e validado por reconhecimento facial.
                     </p>
                 </div>
-                <blockquote class="pull">
-                    <p>Ninguém pode negar atendimento no posto ou vaga na escola municipal porque você não tem SancaGov.
-                    </p>
-                </blockquote>
-            </div>
-        </article>
-
-        <!-- 4. Smart Sanca -->
-        <article class="story wrap" id="smart-sanca">
-            <header class="story-head">
-                <p class="kicker"><span class="num">4</span> Segurança</p>
-                <h2>Smart Sanca: a central que vigia a cidade 24 horas</h2>
-                <p class="deck">Inaugurada em julho de 2025, junta câmeras, leitura de placas e as forças de segurança
-                    num só lugar.</p>
-            </header>
-            <div class="story-grid story-grid-even">
-                <div class="story-body">
-                    <p class="dropcap">
-                        A central reúne câmeras com reconhecimento facial e leitura de placas (LPR), viaturas da GCM
-                        com câmera e GPS, e trabalha junto com Polícia Militar, Defesa Civil, trânsito e saúde.
-                        Em emergência, ligue <a href="tel:08007000156">0800 7000 156</a>.
-                    </p>
-
-                    <table class="figures">
-                        <caption>Números divulgados pela Prefeitura no primeiro ano (jul/2025 – jul/2026)</caption>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Câmeras integradas</th>
-                                <td>710 <span>510 da Prefeitura e 200 de condomínios e comércios</span></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Foragidos capturados</th>
-                                <td>mais de 200</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Chamados pelo 0800</th>
-                                <td>mais de 40 mil</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <p>
-                        <strong>Tem condomínio ou comércio?</strong> Dá para ligar suas câmeras ao sistema pedindo
-                        pelo e-mail
-                        <a href="mailto:suporte.smartsanca@saocaetanodosul.sp.gov.br">suporte.smartsanca@saocaetanodosul.sp.gov.br</a>.
-                    </p>
-                </div>
-                <div class="story-side">
-                    <figure class="photo">
-                        <img src="img/av-goias.jpg" srcset="img/av-goias-640.jpg 640w, img/av-goias.jpg 1280w"
-                            sizes="(max-width: 960px) 100vw, 520px" width="1280" height="960" loading="lazy"
-                            alt="Ponto de ônibus coberto e prédio de fachada metálica na Avenida Goiás, com árvores na calçada.">
-                        <figcaption>
-                            Avenida Goiás.
-                            <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
-                        </figcaption>
-                    </figure>
-                    <div class="box">
-                        <p class="box-title">O que está anunciado</p>
-                        <ul class="plain-list">
-                            <li><strong>Uma câmera por cruzamento</strong> até 2028.</li>
-                            <li><strong>Unidade 2</strong> no Parque Linear da Av. Presidente Kennedy.</li>
-                            <li><strong>Casa de Vidro</strong>, réplica da central aberta ao público no ParkShopping
-                                São Caetano.</li>
-                            <li><strong>Programa Drenar</strong>, com mais piscinões contra enchentes.</li>
-                        </ul>
+                <div class="sobre-data-grid">
+                    <div class="sobre-data-item">
+                        <div class="data-icon bg-blue-grad"><span class="material-icons-outlined">trending_up</span></div>
+                        <div class="data-value">0,862</div>
+                        <div class="data-label">IDH (IBGE) <br><span style="font-size:0.65rem; color:#94a3b8; font-weight:normal;">Dados Set/2026 [A VERIFICAR]</span></div>
+                    </div>
+                    <div class="sobre-data-item">
+                        <div class="data-icon bg-green-grad"><span class="material-icons-outlined">people</span></div>
+                        <div class="data-value">172.693</div>
+                        <div class="data-label">Habitantes (est. 2025) <br><span style="font-size:0.65rem; color:#94a3b8; font-weight:normal;">Dados Set/2026 [A VERIFICAR]</span></div>
+                    </div>
+                    <div class="sobre-data-item">
+                        <div class="data-icon bg-orange-grad"><span class="material-icons-outlined">map</span></div>
+                        <div class="data-value">15,3 km²</div>
+                        <div class="data-label">Menor Município (Área)</div>
+                    </div>
+                    <div class="sobre-data-item">
+                        <div class="data-icon bg-purple-grad"><span class="material-icons-outlined">account_balance</span></div>
+                        <div class="data-value">Tite C.</div>
+                        <div class="data-label">Prefeito (2025-2028)</div>
                     </div>
                 </div>
             </div>
-        </article>
+        </section>
 
-        <!-- Foto de respiro -->
-        <figure class="photo photo-band">
-            <img src="img/parque-chico-mendes.jpg"
-                srcset="img/parque-chico-mendes-640.jpg 640w, img/parque-chico-mendes.jpg 1280w" sizes="100vw"
-                width="1280" height="960" loading="lazy"
-                alt="Parque Ecológico Chico Mendes visto do alto, com gramados, caminhos curvos e muitas árvores.">
-            <figcaption class="wrap">
-                Parque Ecológico Chico Mendes.
-                <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
-            </figcaption>
-        </figure>
+        <!-- ===================== BENEFÍCIOS SECTION ===================== -->
+        <section id="beneficios" class="beneficios-section reveal">
+            <div class="section-header">
+                <h2>Os Pilares do SancaGov</h2>
+                <p>A plataforma integra dados dos moradores para otimizar a gestão pública e garantir que os benefícios cheguem a quem realmente reside na cidade.</p>
+            </div>
 
-        <!-- 5 e 6. Cronologia e perguntas -->
-        <div class="pair wrap">
-            <section class="story story-plain" id="cronologia">
-                <header class="story-head">
-                    <p class="kicker"><span class="num">5</span> Cronologia</p>
-                    <h2>Como chegamos aqui</h2>
-                </header>
-                <ol class="timeline">
-                    <li>
-                        <time datetime="2025-01">Jan 2025</time>
-                        <p>Tite Campanella assume a Prefeitura (2025–2028) e põe a digitalização dos serviços entre as
-                            prioridades.</p>
-                    </li>
-                    <li>
-                        <time datetime="2025-07">Jul 2025</time>
-                        <p>Inauguração do Smart Sanca, com mais de 500 câmeras e leitura de placas.</p>
-                    </li>
-                    <li>
-                        <time datetime="2026">2026</time>
-                        <p>Lançamento do SancaGov, com cadastro liberado em fases.</p>
-                    </li>
-                    <li>
-                        <time datetime="2026-05">Mai 2026</time>
-                        <p>TJSP suspende por liminar a exigência do cadastro para saúde e educação.</p>
-                    </li>
-                    <li>
-                        <time datetime="2026-06-08">8 jun 2026</time>
-                        <p>Abre a fase 4: todos os moradores podem se cadastrar.</p>
-                    </li>
-                    <li>
-                        <time datetime="2026-07-08">8 jul 2026</time>
-                        <p>Órgão Especial do TJSP rejeita o recurso da Prefeitura e mantém a liminar.</p>
-                    </li>
-                    <li>
-                        <time datetime="2026-07-15">15 jul 2026</time>
-                        <p>Tarifa Zero passa a valer só para moradores cadastrados e exceções.</p>
-                    </li>
-                </ol>
-            </section>
-
-            <section class="story story-plain" id="perguntas">
-                <header class="story-head">
-                    <p class="kicker"><span class="num">6</span> Perguntas</p>
-                    <h2>Dúvidas dos leitores</h2>
-                </header>
-                <div class="faq">
-                    <details>
-                        <summary>Quem pode se cadastrar?</summary>
-                        <p>Qualquer morador de São Caetano do Sul com CPF. Desde 8 de junho de 2026 o cadastro está
-                            aberto a todos, pelo site oficial.</p>
-                    </details>
-                    <details>
-                        <summary>Preciso do SancaGov para ir ao posto ou matricular meu filho?</summary>
-                        <p>Não, por enquanto. A liminar do TJSP impede que o cadastro seja exigido para saúde e
-                            educação. Ele continua exigido para o Tarifa Zero.</p>
-                    </details>
-                    <details>
-                        <summary>Não tenho celular com câmera. E agora?</summary>
-                        <p>O site também abre no computador, e o Atende Fácil faz o atendimento presencial
-                            (Rua Major Carlo Del Prete, 651, Centro · <a href="tel:1142328888">(11) 4232-8888</a>).</p>
-                    </details>
-                    <details>
-                        <summary>O que acontece com a foto do meu rosto?</summary>
-                        <p>Segundo a Prefeitura, a foto serve para validar o cadastro, os dados são criptografados,
-                            seguem a LGPD e só órgãos autorizados têm acesso. Pela LGPD, você pode pedir à Prefeitura
-                            informações sobre como seus dados são usados.</p>
-                    </details>
-                    <details>
-                        <summary>Estudo em São Caetano, mas moro em outra cidade. Pago ônibus?</summary>
-                        <p>Depende da instituição. Estudantes das escolas listadas nas
-                            <a href="#excecoes">exceções</a> continuam com gratuidade, mas precisam pedir o cartão pelo
-                            Atende Fácil.</p>
-                    </details>
-                    <details>
-                        <summary>Meu cadastro ainda não foi aprovado. O que faço?</summary>
-                        <p>Enquanto não for aprovado, a passagem é cobrada, a não ser que você esteja nas exceções.
-                            Para saber em que pé está o pedido, procure o Atende Fácil.</p>
-                    </details>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue-grad">
+                        <span class="material-icons-outlined icon-animate">badge</span>
+                    </div>
+                    <h3>Identidade Única do Cidadão</h3>
+                    <p>Um único cadastro vinculado ao CPF e validado por reconhecimento facial. A prefeitura unifica dados de saúde, educação e transporte em uma base centralizada.</p>
                 </div>
-            </section>
-        </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon bg-green-grad">
+                        <span class="material-icons-outlined icon-animate">directions_bus</span>
+                    </div>
+                    <h3>Tarifa Zero Exclusivo p/ Moradores</h3>
+                    <p>Desde 15 de julho de 2026, o Tarifa Zero é exclusivo para moradores cadastrados no SancaGov. Não-moradores pagam R$ 5,00. Estudantes de USCS, SESI, SENAI, ETEC e pacientes oncológicos têm exceções previstas em lei.</p>
+                </div>
 
-        <!-- 7. Serviço -->
-        <section class="service" id="servico" aria-labelledby="servico-title">
-            <div class="wrap">
-                <p class="kicker"><span class="num">7</span> Serviço</p>
-                <h2 id="servico-title">Telefones e endereços</h2>
-                <div class="service-grid">
-                    <div>
-                        <h3>Emergência</h3>
-                        <ul class="phones">
-                            <li><span>GCM</span><a href="tel:153">153</a></li>
-                            <li><span>Smart Sanca</span><a href="tel:08007000156">0800 7000 156</a></li>
-                        </ul>
+                <div class="feature-card">
+                    <div class="feature-icon bg-orange-grad">
+                        <span class="material-icons-outlined icon-animate">face</span>
                     </div>
-                    <div>
-                        <h3>Atendimento</h3>
-                        <ul class="phones">
-                            <li><span>Atende Fácil</span><a href="tel:1142328888">(11) 4232-8888</a></li>
-                        </ul>
-                        <p class="address">Rua Major Carlo Del Prete, 651, Centro</p>
+                    <h3>Reconhecimento Facial de Ponta</h3>
+                    <p>O cadastro é feito digitalmente pelo celular com validação biométrica facial. Isso garante que os benefícios sejam direcionados exclusivamente aos residentes reais da cidade.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon bg-red-grad">
+                        <span class="material-icons-outlined icon-animate">health_and_safety</span>
                     </div>
-                    <div>
-                        <h3>Sites oficiais</h3>
-                        <ul class="links">
-                            <li><a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Portal SancaGov</a>
-                            </li>
-                            <li><a href="https://www.saocaetanodosul.sp.gov.br" rel="noopener">Prefeitura de São
-                                    Caetano do Sul</a></li>
-                            <li><a href="https://afweb.saocaetanodosul.sp.gov.br" rel="noopener">Atende Fácil
-                                    (agendamento)</a></li>
-                            <li><a href="https://camarascs.sp.gov.br" rel="noopener">Câmara Municipal</a></li>
-                        </ul>
+                    <h3>Saúde Conectada 360°</h3>
+                    <p>Prontuário médico eletrônico unificado conectando UBSs, hospitais e postos de saúde. Histórico de consultas, receitas digitais e controle vacinal em um só lugar.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon bg-yellow-grad">
+                        <span class="material-icons-outlined icon-animate">school</span>
                     </div>
+                    <h3>Educação na Palma da Mão</h3>
+                    <p>Pais acompanham frequência escolar, notas e boletins da rede municipal. Matrículas e comunicados escolares diretamente pelo aplicativo SancaGov.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon bg-cyan-grad">
+                        <span class="material-icons-outlined icon-animate">shield</span>
+                    </div>
+                    <h3>Smart Sanca & GCM Integrada</h3>
+                    <p>Inaugurado em julho de 2025, o Smart Sanca é o centro de inteligência que integra câmeras com reconhecimento facial, leitura de placas (LPR) e a Guarda Civil Municipal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SMART SANCA SECTION ===================== -->
+        <section id="smart-sanca" class="smart-sanca-section reveal">
+            <div class="section-header">
+                <div class="sim-badge" style="background: rgba(6,182,212,0.1); color: #22d3ee; border-color: rgba(6,182,212,0.2);">Centro de Inteligência</div>
+                <h2>Smart Sanca — 1 Ano de Operação (Jul/2025 – Jul/2026)</h2>
+                <p>O centro de tecnologia e inteligência de São Caetano do Sul que integra segurança, trânsito e emergências em tempo real. Em seu primeiro ano, o Smart Sanca alcançou <strong>710 câmeras</strong>, <strong>+200 foragidos capturados</strong> e <strong>+40 mil acionamentos</strong> via 0800.</p>
+            </div>
+
+            <div class="smart-grid">
+                <div class="smart-card">
+                    <div class="smart-icon bg-cyan-grad">
+                        <span class="material-icons-outlined">videocam</span>
+                    </div>
+                    <h3>710 Câmeras em Tempo Real</h3>
+                    <p><strong>510 câmeras próprias</strong> da Prefeitura e <strong>200 câmeras privadas</strong> de condomínios e comércios integradas ao sistema, espalhadas por pontos estratégicos da cidade, transmitindo imagens 24 horas.</p>
+                    <span class="smart-tag">
+                        <span class="material-icons-outlined" style="font-size:0.75rem!important;">check_circle</span>
+                        Operacional 24h
+                    </span>
+                </div>
+
+                <div class="smart-card">
+                    <div class="smart-icon bg-blue-grad">
+                        <span class="material-icons-outlined">face</span>
+                    </div>
+                    <h3>Reconhecimento Facial</h3>
+                    <p>Tecnologia de identificação facial integrada à base de dados de segurança pública, auxiliando na captura de foragidos e prevenção de crimes.</p>
+                    <span class="smart-tag">
+                        <span class="material-icons-outlined" style="font-size:0.75rem!important;">check_circle</span>
+                        IA Avançada
+                    </span>
+                </div>
+
+                <div class="smart-card">
+                    <div class="smart-icon bg-green-grad">
+                        <span class="material-icons-outlined">directions_car</span>
+                    </div>
+                    <h3>Leitura de Placas (LPR)</h3>
+                    <p>Câmeras com tecnologia LPR fazem cruzamento de placas veiculares com bancos de dados estaduais e federais de segurança pública em tempo real.</p>
+                    <span class="smart-tag">
+                        <span class="material-icons-outlined" style="font-size:0.75rem!important;">check_circle</span>
+                        Integração SSP
+                    </span>
+                </div>
+
+                <div class="smart-card">
+                    <div class="smart-icon bg-orange-grad">
+                        <span class="material-icons-outlined">groups</span>
+                    </div>
+                    <h3>Atuação Integrada</h3>
+                    <p>O Smart Sanca opera em parceria direta com a GCM, Polícia Militar, Defesa Civil, Trânsito e Saúde, permitindo respostas rápidas a qualquer ocorrência.</p>
+                    <span class="smart-tag">
+                        <span class="material-icons-outlined" style="font-size:0.75rem!important;">check_circle</span>
+                        GCM + PM + Defesa Civil
+                    </span>
+                </div>
+
+                <div class="smart-card">
+                    <div class="smart-icon bg-purple-grad">
+                        <span class="material-icons-outlined">local_police</span>
+                    </div>
+                    <h3>Viaturas Inteligentes</h3>
+                    <p>A frota da GCM possui viaturas equipadas com câmeras de monitoramento que transmitem imagens em tempo real para a central do Smart Sanca.</p>
+                    <span class="smart-tag">
+                        <span class="material-icons-outlined" style="font-size:0.75rem!important;">check_circle</span>
+                        GPS em Tempo Real
+                    </span>
+                </div>
+
+                <div class="smart-card">
+                    <div class="smart-icon bg-red-grad">
+                        <span class="material-icons-outlined">handshake</span>
+                    </div>
+                    <h3>Segurança Colaborativa</h3>
+                    <p>Condomínios e comércios podem integrar suas câmeras ao sistema público. Basta enviar solicitação para suporte.smartsanca@saocaetanodosul.sp.gov.br.</p>
+                    <span class="smart-tag">
+                        <span class="material-icons-outlined" style="font-size:0.75rem!important;">check_circle</span>
+                        Comunidade Integrada
+                    </span>
+                </div>
+            </div>
+
+            <!-- Smart Sanca: Resultados do 1º Ano -->
+            <div class="smart-results reveal" style="margin-top: 4rem;">
+                <div class="sim-badge" style="background: rgba(16,185,129,0.1); color: #34d399; border-color: rgba(16,185,129,0.2); margin-bottom: 1.5rem;">Resultados do 1º Ano (Jul/2025 – Jul/2026)</div>
+                <div class="smart-results-grid">
+                    <div class="result-highlight-card">
+                        <div class="rh-icon bg-green-grad">
+                            <span class="material-icons-outlined">person_search</span>
+                        </div>
+                        <div class="rh-number counter-number" data-target="200" data-prefix="+">0</div>
+                        <div class="rh-label">Foragidos Capturados</div>
+                        <div class="rh-desc">Com tecnologia de reconhecimento facial em tempo real</div>
+                    </div>
+                    <div class="result-highlight-card">
+                        <div class="rh-icon bg-blue-grad">
+                            <span class="material-icons-outlined">phone_in_talk</span>
+                        </div>
+                        <div class="rh-number counter-number" data-target="40000" data-prefix="+" data-suffix="">0</div>
+                        <div class="rh-label">Acionamentos via 0800</div>
+                        <div class="rh-desc">Central integrada 24h: <strong>0800 7000 156</strong></div>
+                    </div>
+                    <div class="result-highlight-card">
+                        <div class="rh-icon bg-cyan-grad">
+                            <span class="material-icons-outlined">videocam</span>
+                        </div>
+                        <div class="rh-number counter-number" data-target="710" data-suffix="">0</div>
+                        <div class="rh-label">Câmeras Integradas</div>
+                        <div class="rh-desc">510 próprias + 200 privadas de condomínios e comércios</div>
+                    </div>
+                    <div class="result-highlight-card">
+                        <div class="rh-icon bg-purple-grad">
+                            <span class="material-icons-outlined">verified_user</span>
+                        </div>
+                        <div class="rh-number">1ª</div>
+                        <div class="rh-label">Menor Taxa de Violência</div>
+                        <div class="rh-desc">Entre cidades com +100 mil hab. no Brasil (2025)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CALCULATOR SECTION (TARIFA ZERO SAVINGS) ===================== -->
+        <section id="simulador" class="simulador-section reveal">
+            <div class="simulador-card">
+                <div class="simulador-header">
+                    <div class="sim-badge">Simulador do Tarifa Zero</div>
+                    <h2>Calcule a Economia para Moradores</h2>
+                    <p>Desde 15/07/2026, o transporte público municipal é gratuito exclusivamente para moradores cadastrados no SancaGov. Não-moradores pagam R$ 5,00 por viagem. A demanda saltou de <strong>20 mil para 80 mil passageiros/dia</strong> (+300%), gerando economia estimada de <strong>R$ 15 milhões/ano</strong> para os cofres públicos.</p>
+                </div>
+
+                <div class="simulador-body">
+                    <div class="calc-group">
+                        <label for="tripsRange">
+                            <span>Viagens por semana (por pessoa)</span>
+                            <span class="range-val" id="tripsValue">10</span>
+                        </label>
+                        <input type="range" id="tripsRange" min="1" max="40" value="10" class="styled-range">
+                        <div class="range-labels">
+                            <span>1 viagem</span>
+                            <span>20 viagens</span>
+                            <span>40 viagens</span>
+                        </div>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="ticketPrice">Tarifa para não-moradores (R$)</label>
+                        <div class="input-wrapper">
+                            <span class="currency-symbol">R$</span>
+                            <input type="number" id="ticketPrice" value="5.00" step="0.10" min="1">
+                        </div>
+                    </div>
+
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <div class="result-label">Economia Mensal</div>
+                            <div class="result-value text-green" id="monthlySavings">R$ 216,50</div>
+                        </div>
+                        <div class="result-card featured">
+                            <div class="result-label">Economia Anual</div>
+                            <div class="result-value text-gradient-green" id="annualSavings">R$ 2.598,00</div>
+                        </div>
+                    </div>
+
+                    <div class="savings-feedback-box" id="savingsFeedback">
+                        <span class="material-icons-outlined feedback-icon">emoji_events</span>
+                        <span class="feedback-text">Com essa economia anual, um morador cadastrado no SancaGov economiza o equivalente a mais de 2 meses de salário mínimo apenas em transporte!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== COMO SE CADASTRAR (STEPPER) ===================== -->
+        <section id="cadastro" class="cadastro-section reveal">
+            <div class="section-header">
+                <div class="sim-badge" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">Passo a Passo Real</div>
+                <h2>Como se Cadastrar no SancaGov</h2>
+                <p>O cadastro é feito de forma digital pelo celular, sem necessidade de ir a um posto presencialmente. O processo é escalonado por fases.</p>
+            </div>
+
+            <div class="stepper">
+                <div class="step-item">
+                    <div class="step-number bg-blue-grad">1</div>
+                    <div class="step-content">
+                        <h4>Acesse o Portal Oficial</h4>
+                        <p>Entre no hotsite oficial do SancaGov pelo navegador do seu celular ou computador. Todo o processo é feito digitalmente.</p>
+                        <a href="https://sancagov.saocaetanodosul.sp.gov.br" target="_blank" class="step-link">
+                            <span class="material-icons-outlined">open_in_new</span>
+                            sancagov.saocaetanodosul.sp.gov.br
+                        </a>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number bg-green-grad">2</div>
+                    <div class="step-content">
+                        <h4>Preencha seus Dados Pessoais</h4>
+                        <p>Informe seu CPF, dados de endereço e informações pessoais. O sistema valida se você é residente de São Caetano do Sul para liberar os benefícios.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number bg-orange-grad">3</div>
+                    <div class="step-content">
+                        <h4>Validação por Reconhecimento Facial</h4>
+                        <p>Tire uma foto do seu rosto usando a câmera do celular. A tecnologia de biometria facial garante a segurança e a veracidade do cadastro, evitando fraudes.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number bg-purple-grad">4</div>
+                    <div class="step-content">
+                        <h4>Aguarde sua Fase de Liberação</h4>
+                        <p>O cadastro é liberado em fases escalonadas: <strong>1ª)</strong> Beneficiários de programas sociais (SEAIS); <strong>2ª)</strong> Idosos cadastrados nos CISEs; <strong>3ª)</strong> Estudantes da rede municipal e bolsistas; <strong>4ª)</strong> Demais moradores.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legal-notice">
+                <span class="material-icons-outlined">gavel</span>
+                <p><strong>Nota sobre decisão judicial:</strong> Em maio de 2026, o TJSP concedeu liminar suspendendo a exigência do cadastro SancaGov para acesso a serviços públicos universais como saúde e educação. Em julho de 2026, o Tribunal rejeitou recurso da prefeitura e manteve a liminar. Acompanhe as atualizações no portal oficial da Prefeitura.</p>
+            </div>
+        </section>
+
+        <!-- ===================== DEPOIMENTOS SECTION ===================== -->
+        <section id="depoimentos" class="depoimentos-section reveal">
+            <div class="section-header">
+                <h2>Experiências dos Moradores</h2>
+                <p>Relatos de cidadãos de São Caetano do Sul sobre como a digitalização dos serviços municipais impacta o dia a dia.</p>
+            </div>
+
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="dep-header">
+                        <div class="dep-avatar user-1">DB</div>
+                        <div>
+                            <h4>Dona Benedita</h4>
+                            <span>68 anos, Aposentada (Bairro Santa Maria)</span>
+                        </div>
+                    </div>
+                    <p class="dep-text">"Fiz o cadastro pelo celular mesmo, com a ajuda da minha neta. A foto do rosto foi rápida. Agora confiro meus exames e receitas pelo celular sem precisar ir ao postinho só pra tirar dúvida."</p>
+                    <div class="dep-rating">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="dep-header">
+                        <div class="dep-avatar user-2">MA</div>
+                        <div>
+                            <h4>Mateus Andrade</h4>
+                            <span>22 anos, Universitário da USCS (Bairro Barcelona)</span>
+                        </div>
+                    </div>
+                    <p class="dep-text">"Estudo na USCS e moro no Barcelona. Com o Tarifa Zero pelo SancaGov, economizo mais de R$ 200 por mês. Esse dinheiro agora vai direto para livros e material da faculdade."</p>
+                    <div class="dep-rating">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="dep-header">
+                        <div class="dep-avatar user-3">CR</div>
+                        <div>
+                            <h4>Camila Ribeiro</h4>
+                            <span>38 anos, Advogada e Mãe (Bairro Cerâmica)</span>
+                        </div>
+                    </div>
+                    <p class="dep-text">"Monitoro a frequência e as notas dos meus filhos pelo app. Se faltam à aula, o sistema avisa. O reconhecimento facial me dá segurança sobre quem está acessando nossos dados."</p>
+                    <div class="dep-rating">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== STATS COUNTER SECTION ===================== -->
+        <section class="stats-section reveal">
+            <div class="stats-section-inner">
+                <div class="stats-header">
+                    <div class="sim-badge">SancaGov em Números</div>
+                    <h2>Dados reais de São Caetano do Sul</h2>
+                    <p>Números que refletem a realidade da cidade com maior IDH do Brasil e sua transformação digital.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stats-counter-card">
+                        <div class="counter-icon bg-blue-grad">
+                            <span class="material-icons-outlined">how_to_reg</span>
+                        </div>
+                        <div class="counter-number" data-target="100000" data-prefix="+">0</div>
+                        <div class="counter-label">Cadastros SancaGov <br><span style="font-size:0.65rem; color:#94a3b8; font-weight:normal;">Dados Set/2026 [A VERIFICAR]</span></div>
+                    </div>
+                    <div class="stats-counter-card">
+                        <div class="counter-icon bg-cyan-grad">
+                            <span class="material-icons-outlined">people</span>
+                        </div>
+                        <div class="counter-number" data-target="172693" data-suffix="">0</div>
+                        <div class="counter-label">Habitantes (Est. IBGE 2025) <br><span style="font-size:0.65rem; color:#94a3b8; font-weight:normal;">Dados Set/2026 [A VERIFICAR]</span></div>
+                    </div>
+                    <div class="stats-counter-card">
+                        <div class="counter-icon bg-green-grad">
+                            <span class="material-icons-outlined">directions_bus</span>
+                        </div>
+                        <div class="counter-number" data-target="0" data-suffix="" data-display="R$ 0,00">R$ 0,00</div>
+                        <div class="counter-label">Tarifa p/ Moradores Cadastrados</div>
+                    </div>
+                    <div class="stats-counter-card">
+                        <div class="counter-icon bg-orange-grad">
+                            <span class="material-icons-outlined">videocam</span>
+                        </div>
+                        <div class="counter-number" data-target="710" data-suffix="">0</div>
+                        <div class="counter-label">Câmeras Smart Sanca <br><span style="font-size:0.65rem; color:#94a3b8; font-weight:normal;">Dados Set/2026 [A VERIFICAR]</span></div>
+                    </div>
+                    <div class="stats-counter-card">
+                        <div class="counter-icon bg-purple-grad">
+                            <span class="material-icons-outlined">person_search</span>
+                        </div>
+                        <div class="counter-number" data-target="200" data-prefix="+">0</div>
+                        <div class="counter-label">Foragidos Capturados (1º Ano) <br><span style="font-size:0.65rem; color:#94a3b8; font-weight:normal;">Dados Set/2026 [A VERIFICAR]</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TIMELINE SECTION ===================== -->
+        <section class="timeline-section reveal">
+            <div class="section-header">
+                <div class="sim-badge" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">Linha do Tempo Real</div>
+                <h2>A Jornada Real do SancaGov</h2>
+                <p>Cronologia baseada em fatos verificados da transformação digital de São Caetano do Sul.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot bg-blue-grad"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Janeiro 2025</div>
+                        <h4>Nova Gestão Municipal</h4>
+                        <p>Tite Campanella toma posse como prefeito de São Caetano do Sul, colocando a digitalização de serviços e infraestrutura como prioridades da administração (Mandato 2025-2028).</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-right">
+                    <div class="timeline-dot bg-cyan-grad"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Julho 2025</div>
+                        <h4>Inauguração do Smart Sanca</h4>
+                        <p>Centro de Inteligência é inaugurado, integrando mais de 500 câmeras e leitura de placas veiculares (LPR) às viaturas e forças policiais locais.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot bg-green-grad"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">8 de Junho 2026</div>
+                        <h4>Abertura da Fase 4 do SancaGov</h4>
+                        <p>Após liberar cadastros escalonados por grupos de prioridade, a prefeitura abre a última fase do cadastro digital para toda a população de moradores da cidade.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-right">
+                    <div class="timeline-dot bg-orange-grad"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">8 de Julho 2026</div>
+                        <h4>Manutenção da Liminar pelo TJSP</h4>
+                        <p>O desembargador Gastão Toledo de Campos Mello Filho rejeita recurso da prefeitura e mantém a liminar que suspende a exigência do cadastro SancaGov para os serviços essenciais de saúde e educação.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot bg-red-grad"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">15 de Julho 2026</div>
+                        <h4>Restrição do Tarifa Zero</h4>
+                        <p>Conforme Decreto 12.285/2026, a gratuidade nos ônibus municipais torna-se exclusiva para moradores com SancaGov aprovado, devido ao aumento de 300% na demanda diária. Não-moradores sem exceções passam a pagar R$ 5,00.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PARCEIROS / INSTITUIÇÕES ===================== -->
+        <section class="parceiros-section reveal">
+            <div class="section-header">
+                <div class="sim-badge" style="background: rgba(234,179,8,0.1); color: #facc15; border-color: rgba(234,179,8,0.2);">Exceções Previstas em Lei</div>
+                <h2>Instituições com Direito ao Tarifa Zero</h2>
+                <p>Estudantes destas instituições e pacientes oncológicos mantêm a gratuidade mesmo sendo não-moradores, conforme Decreto 12.285/2026.</p>
+            </div>
+            <div class="parceiros-grid">
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">school</span>
+                    USCS (Universidade Municipal)
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">palette</span>
+                    Fundação das Artes
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">engineering</span>
+                    SESI & SENAI
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">biotech</span>
+                    ETEC & FATEC
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">architecture</span>
+                    Instituto Mauá de Tecnologia
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">psychology</span>
+                    Fac. Paulista de Serviço Social
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">local_hospital</span>
+                    Pacientes Oncológicos
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">elderly</span>
+                    Idosos (60 anos ou mais)
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">badge</span>
+                    Servidores Públicos de SCS
+                </div>
+                <div class="parceiro-item">
+                    <span class="material-icons-outlined">military_tech</span>
+                    Forças de Segurança & Tiro de Guerra
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FAQ SECTION ===================== -->
+        <section id="faq" class="faq-section reveal">
+            <div class="section-header">
+                <div class="sim-badge" style="background: rgba(234,179,8,0.1); color: #facc15; border-color: rgba(234,179,8,0.2);">Dúvidas Frequentes</div>
+                <h2>Tudo que você precisa saber</h2>
+                <p>Respostas baseadas em informações reais sobre o SancaGov e seus benefícios.</p>
+            </div>
+            <div class="faq-list" id="faqList">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Quem pode usar o SancaGov?</span>
+                        <span class="faq-icon material-icons-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Todos os moradores de São Caetano do Sul com CPF válido podem se cadastrar no SancaGov. O cadastro é feito digitalmente pelo celular no portal <a href="https://sancagov.saocaetanodosul.sp.gov.br" target="_blank">sancagov.saocaetanodosul.sp.gov.br</a>, com validação por reconhecimento facial. O processo é escalonado por fases: primeiro beneficiários de programas sociais, depois idosos, estudantes e finalmente demais moradores.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como funciona o Tarifa Zero a partir de julho de 2026?</span>
+                        <span class="faq-icon material-icons-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Desde 15 de julho de 2026, o Tarifa Zero é exclusivo para moradores cadastrados no SancaGov. Não-moradores passam a pagar R$ 5,00 por viagem. Conforme o Decreto 12.285/2026, existem exceções para idosos com 60 anos ou mais, servidores públicos municipais, pacientes oncológicos em tratamento ativo, forças de segurança uniformizadas e estudantes de instituições específicas como USCS, Fundação das Artes, SESI, SENAI, ETEC, FATEC, IMT e Faculdade Paulista de Serviço Social. Não-moradores inclusos nestas exceções devem solicitar o cadastro de gratuidade no Atende Fácil.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>E quanto à decisão judicial que suspendeu a exigência do cadastro?</span>
+                        <span class="faq-icon material-icons-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No dia 8 de julho de 2026, o Órgão Especial do TJSP (Tribunal de Justiça de São Paulo) manteve a decisão liminar que suspende a exigência do cadastramento SancaGov para acesso a serviços essenciais e universais, como saúde e educação públicas. A ação foi movida sob argumento de inconstitucionalidade. No entanto, para fins de controle e concessão da gratuidade de transporte municipal (Tarifa Zero), a exigência do SancaGov continua ativa para moradores de São Caetano do Sul.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Meus dados estão seguros no aplicativo?</span>
+                        <span class="faq-icon material-icons-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O SancaGov utiliza criptografia e segue a LGPD (Lei Geral de Proteção de Dados). Os dados biométricos de reconhecimento facial são usados para validação do cadastro. A Prefeitura afirma que apenas órgãos autorizados têm acesso às informações para prestação dos serviços públicos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como não-moradores podem cadastrar para o Tarifa Zero?</span>
+                        <span class="faq-icon material-icons-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não-moradores que se enquadram nas exceções (estudantes das instituições previstas ou pacientes oncológicos) devem agendar atendimento pelo site <a href="https://afweb.saocaetanodosul.sp.gov.br" target="_blank">afweb.saocaetanodosul.sp.gov.br</a>. Após login, selecione "Nova Solicitação" → departamento SEAIS → "cadastro de não moradores para aquisição de cartão de gratuidade". O atendimento presencial ocorre no Atende Fácil (Rua Major Carlo Del Prete, 651, Centro).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>O que é o Smart Sanca?</span>
+                        <span class="faq-icon material-icons-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O Smart Sanca é o Centro de Inteligência, Segurança e Emergências de São Caetano do Sul, inaugurado em julho de 2025. Ele integra câmeras com reconhecimento facial, leitura de placas veiculares (LPR), e opera em parceria com GCM, Polícia Militar, Defesa Civil e Trânsito. Condomínios e comércios podem integrar suas câmeras ao sistema entrando em contato pelo e-mail suporte.smartsanca@saocaetanodosul.sp.gov.br.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>O SancaGov é apenas para celular?</span>
+                        <span class="faq-icon material-icons-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O cadastro do SancaGov é feito principalmente pelo celular, já que requer a câmera para reconhecimento facial. Porém, o portal web completo pode ser acessado por qualquer computador em <a href="https://sancagov.saocaetanodosul.sp.gov.br" target="_blank">sancagov.saocaetanodosul.sp.gov.br</a>. A Prefeitura também disponibiliza atendimento presencial pelo Atende Fácil para quem não tem acesso digital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ROADMAP / EXPANSÃO FUTURA ===================== -->
+        <section id="expansao" class="roadmap-section reveal">
+            <div class="section-header">
+                <div class="sim-badge" style="background: rgba(139,92,246,0.1); color: #a78bfa; border-color: rgba(139,92,246,0.2);">Planejamento Estratégico</div>
+                <h2>Expansão e Futuro da Cidade</h2>
+                <p>Metas e projetos que moldam a São Caetano do Sul dos próximos anos, impulsionando tecnologia, segurança e sustentabilidade urbana.</p>
+            </div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <div class="roadmap-num">01</div>
+                    <div class="roadmap-content">
+                        <h3>1 Câmera por Cruzamento (Meta 2028)</h3>
+                        <p>O plano de ampliação do Smart Sanca prevê monitorar 100% dos cruzamentos viários da cidade, expandindo a vigilância inteligente e colaborativa.</p>
+                    </div>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-num">02</div>
+                    <div class="roadmap-content">
+                        <h3>Smart Sanca — Unidade 2</h3>
+                        <p>Implantação de uma central de redundância e inteligência no Parque Linear da Av. Presidente Kennedy, reforçando a cobertura operacional.</p>
+                    </div>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-num">03</div>
+                    <div class="roadmap-content">
+                        <h3>Combate a Enchentes: Projeto Drenar</h3>
+                        <p>Continuidade e ampliação dos investimentos do programa Drenar, focados no aumento de piscinões e escoamento preventivo da rede de macrodrenagem.</p>
+                    </div>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-num">04</div>
+                    <div class="roadmap-content">
+                        <h3>Espaço Casa de Vidro</h3>
+                        <p>Réplica operacional da central do Smart Sanca montada no ParkShopping São Caetano, aproximando e conscientizando a população sobre a tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CTA FINAL SECTION ===================== -->
+        <section class="cta-section reveal">
+            <div class="cta-glow-1"></div>
+            <div class="cta-glow-2"></div>
+            <div class="cta-card">
+                <div class="cta-badge">
+                    <span class="material-icons-outlined">rocket_launch</span>
+                    <span>Cadastre-se na plataforma oficial</span>
+                </div>
+                <h2>É morador de São Caetano do Sul?</h2>
+                <p>Acesse o portal oficial do SancaGov, faça seu cadastro com reconhecimento facial e garanta acesso ao Tarifa Zero e demais serviços digitais da Prefeitura.</p>
+                <div class="cta-features">
+                    <div class="cta-feat">
+                        <span class="material-icons-outlined">check_circle</span>
+                        <span>Cadastro 100% digital e gratuito</span>
+                    </div>
+                    <div class="cta-feat">
+                        <span class="material-icons-outlined">check_circle</span>
+                        <span>Tarifa Zero exclusivo p/ moradores</span>
+                    </div>
+                    <div class="cta-feat">
+                        <span class="material-icons-outlined">check_circle</span>
+                        <span>Saúde digital unificada</span>
+                    </div>
+                    <div class="cta-feat">
+                        <span class="material-icons-outlined">check_circle</span>
+                        <span>Smart Sanca 24h com a GCM</span>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://sancagov.saocaetanodosul.sp.gov.br" target="_blank" class="cta-btn-main">
+                        <span class="material-icons-outlined">open_in_new</span>
+                        Acessar SancaGov Oficial
+                    </a>
+                    <a href="https://www.saocaetanodosul.sp.gov.br" target="_blank" class="cta-btn-store">
+                        <span class="material-icons-outlined">account_balance</span>
+                        Prefeitura de SCS
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- ===================== FOOTER EXPANDIDO ===================== -->
     <footer class="footer">
-        <div class="wrap">
-            <p class="footer-name">sancagov<span>.com.br</span></p>
-            <p>
-                Guia independente, sem vínculo com a Prefeitura de São Caetano do Sul. As informações vêm de fontes
-                públicas e da imprensa e podem mudar. Antes de decidir qualquer coisa, confira no
-                <a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">portal oficial</a>.
-            </p>
-            <p>
-                Fotos: Lukaaz, via Wikimedia Commons, sob licença
-                <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pt-br" rel="noopener license">CC BY-SA
-                    3.0</a>. Cores e contraste levemente ajustados.
-            </p>
-            <p>&copy; 2026 sancagov.com.br · <a href="#">Voltar ao topo</a></p>
+        <div class="footer-grid">
+            <div class="footer-brand-col">
+                <div class="footer-brand">
+                    <span class="material-icons-outlined footer-icon">domain</span>
+                    <span class="footer-logo">Sanca<span class="highlight">Gov</span> <span class="badge">FAN HUB</span></span>
+                </div>
+                <p class="footer-tagline">Portal independente celebrando a transformação digital de São Caetano do Sul — a cidade com maior IDH do Brasil.</p>
+                <div class="footer-dados">
+                    <div class="footer-dado-item">
+                        <span class="material-icons-outlined">location_on</span>
+                        <span>São Caetano do Sul, SP — ABC Paulista</span>
+                    </div>
+                    <div class="footer-dado-item">
+                        <span class="material-icons-outlined">people</span>
+                        <span>~172.693 hab. (est. IBGE 2025)</span>
+                    </div>
+                    <div class="footer-dado-item">
+                        <span class="material-icons-outlined">trending_up</span>
+                        <span>IDH 0,862 — Maior do Brasil</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Links Oficiais</h4>
+                <div class="footer-col-links">
+                    <a href="https://sancagov.saocaetanodosul.sp.gov.br" target="_blank">Portal SancaGov</a>
+                    <a href="https://www.saocaetanodosul.sp.gov.br" target="_blank">Prefeitura de SCS</a>
+                    <a href="https://afweb.saocaetanodosul.sp.gov.br" target="_blank">Atende Fácil (Agendamento)</a>
+                    <a href="https://camarascs.sp.gov.br" target="_blank">Câmara Municipal</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Neste Portal</h4>
+                <div class="footer-col-links">
+                    <a href="#sobre">Sobre a Cidade</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#smart-sanca">Smart Sanca</a>
+                    <a href="#simulador">Simulador Tarifa Zero</a>
+                    <a href="#cadastro">Como se Cadastrar</a>
+                    <a href="#expansao">Expansão e Futuro</a>
+                    <a href="#faq">Perguntas Frequentes</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contatos Úteis</h4>
+                <div class="footer-col-links">
+                    <a href="tel:1142328888">Atende Fácil: (11) 4232-8888</a>
+                    <a href="tel:153">GCM (Emergência): 153</a>
+                    <a href="tel:08007000156">Smart Sanca (Emergência): 0800 7000 156</a>
+                    <a href="mailto:suporte.smartsanca@saocaetanodosul.sp.gov.br">suporte.smartsanca@saocaetanodosul.sp.gov.br</a>
+                </div>
+            </div>
+        </div>
+        <div class="disclaimer-box">
+            <p><strong>Aviso Legal:</strong> Este site é um projeto independente criado por um entusiasta da tecnologia e gestão pública. Não é o portal oficial da Prefeitura de São Caetano do Sul. As informações são baseadas em fontes públicas e jornalísticas e podem sofrer alterações. Para dados oficiais atualizados, consulte <a href="https://sancagov.saocaetanodosul.sp.gov.br" target="_blank" style="color: #60a5fa;">sancagov.saocaetanodosul.sp.gov.br</a>.</p>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 SancaGov Fan Hub. Desenvolvido com paixão pela inovação pública. Prefeito: Tite Campanella.
         </div>
     </footer>
 
+    <!-- ===================== JAVASCRIPT ===================== -->
     <script>
-        // "Você paga ônibus?": mostra uma pergunta por vez e o resultado.
-        (function () {
-            var form = document.getElementById('checker');
-            if (!form) return;
-            var result = document.getElementById('result');
-            var reset = document.getElementById('checker-reset');
-            var steps = {};
-            form.querySelectorAll('fieldset').forEach(function (f) { steps[f.dataset.step] = f; });
+        document.addEventListener('DOMContentLoaded', () => {
 
-            var CADASTRO = '<a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Fazer o cadastro</a>';
-            var MSG = {
-                gratis: ['yes', 'Você viaja de graça.', 'Seu cadastro aprovado garante o Tarifa Zero nos ônibus municipais.'],
-                pendente: ['no', 'Por enquanto, você paga R$ 5,00.',
-                    'A gratuidade começa quando o cadastro for aprovado, a não ser que você esteja nas exceções. ' + CADASTRO + '.'],
-                excecao: ['yes', 'Você mantém a gratuidade.',
-                    'Estudantes e pacientes oncológicos que não moram na cidade precisam pedir o cartão de gratuidade. <a href="#pedir-cartao">Veja como pedir</a>.'],
-                paga: ['no', 'Você paga R$ 5,00 por viagem.',
-                    'Indo e voltando cinco dias por semana, dá cerca de R$ 217 por mês.']
-            };
+            // ============================================
+            // 1. READING PROGRESS BAR
+            // ============================================
+            const progressBar = document.getElementById('readingProgress');
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = (scrollTop / docHeight) * 100;
+                progressBar.style.width = progress + '%';
+            });
 
-            function val(name) {
-                var el = form.querySelector('input[name="' + name + '"]:checked');
-                return el ? el.value : null;
-            }
+            // ============================================
+            // 2. HAMBURGER MENU (MOBILE)
+            // ============================================
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navLinks = document.getElementById('navLinks');
 
-            function show(key) {
-                if (!key) { result.hidden = true; result.innerHTML = ''; return; }
-                var m = MSG[key];
-                result.className = 'result result-' + m[0];
-                result.innerHTML = '<p class="result-title">' + m[1] + '</p><p>' + m[2] + '</p>';
-                result.hidden = false;
-            }
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isOpen = navLinks.classList.toggle('open');
+                    hamburgerBtn.classList.toggle('open', isOpen);
+                    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+                });
 
-            function update() {
-                var mora = val('mora');
-                steps.cadastro.hidden = mora !== 'sim';
-                steps.excecao.hidden = mora !== 'nao';
-                reset.hidden = !mora;
+                navLinks.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                        hamburgerBtn.classList.remove('open');
+                        hamburgerBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
 
-                var key = null;
-                if (mora === 'sim' && val('cadastro')) key = val('cadastro') === 'sim' ? 'gratis' : 'pendente';
-                if (mora === 'nao' && val('excecao')) key = val('excecao') === 'sim' ? 'excecao' : 'paga';
-                show(key);
-            }
-
-            form.addEventListener('change', update);
-            form.addEventListener('reset', function () { setTimeout(update, 0); });
-            form.addEventListener('submit', function (e) { e.preventDefault(); });
-        })();
-        // Destaca no menu a seção que está na tela.
-        (function () {
-            if (!('IntersectionObserver' in window)) return;
-            var links = {};
-            document.querySelectorAll('.sections a').forEach(function (a) { links[a.hash.slice(1)] = a; });
-            var obs = new IntersectionObserver(function (entries) {
-                entries.forEach(function (e) {
-                    if (!e.isIntersecting) return;
-                    Object.keys(links).forEach(function (id) { links[id].removeAttribute('aria-current'); });
-                    var a = links[e.target.id];
-                    if (a) {
-                        a.setAttribute('aria-current', 'true');
-                        var bar = a.parentNode;
-                        bar.scrollLeft = a.offsetLeft - bar.offsetLeft - 16;
+                document.addEventListener('click', (e) => {
+                    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+                        navLinks.classList.remove('open');
+                        hamburgerBtn.classList.remove('open');
+                        hamburgerBtn.setAttribute('aria-expanded', 'false');
                     }
                 });
-            }, { rootMargin: '-40% 0px -55% 0px' });
-            Object.keys(links).forEach(function (id) {
-                var el = document.getElementById(id);
-                if (el) obs.observe(el);
+            }
+
+            // ============================================
+            // 3. NAVBAR SCROLL EFFECT
+            // ============================================
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             });
-        })();
+
+            // ============================================
+            // 4. CONTROLE DO CELULAR MOCKUP
+            // ============================================
+            const navItems = document.querySelectorAll('.app-nav-item');
+            const screens = document.querySelectorAll('.screen-view');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    screens.forEach(screen => screen.classList.remove('active'));
+                    item.classList.add('active');
+                    const targetScreenId = `screen-${item.getAttribute('data-screen')}`;
+                    const targetScreen = document.getElementById(targetScreenId);
+                    if (targetScreen) targetScreen.classList.add('active');
+                });
+            });
+
+            // Ação do Botão SOS
+            const sosTrigger = document.getElementById('sosTrigger');
+            if (sosTrigger) {
+                sosTrigger.addEventListener('click', () => {
+                    sosTrigger.classList.add('activated');
+                    const textSpan = sosTrigger.querySelector('span:not(.material-icons-outlined)');
+                    const iconSpan = sosTrigger.querySelector('.material-icons-outlined');
+                    if (textSpan && iconSpan) {
+                        iconSpan.textContent = 'check_circle';
+                        textSpan.textContent = 'GCM ACIONADA!';
+                        setTimeout(() => {
+                            sosTrigger.classList.remove('activated');
+                            iconSpan.textContent = 'campaign';
+                            textSpan.textContent = 'BOTÃO SOS';
+                        }, 4000);
+                    }
+                });
+            }
+
+            // ============================================
+            // 5. CALCULADORA TARIFA ZERO
+            // ============================================
+            const tripsRange = document.getElementById('tripsRange');
+            const tripsValue = document.getElementById('tripsValue');
+            const ticketPriceInput = document.getElementById('ticketPrice');
+            const monthlySavings = document.getElementById('monthlySavings');
+            const annualSavings = document.getElementById('annualSavings');
+            const savingsFeedback = document.getElementById('savingsFeedback');
+            const feedbackText = savingsFeedback ? savingsFeedback.querySelector('.feedback-text') : null;
+
+            const currencyFormatter = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            function formatCurrency(value) {
+                return currencyFormatter.format(value);
+            }
+
+            function updateCalculator() {
+                let trips = parseInt(tripsRange.value);
+                if (isNaN(trips) || trips < 1) trips = 1;
+                if (trips > 40) trips = 40;
+                tripsValue.textContent = trips;
+                
+                let price = parseFloat(ticketPriceInput.value);
+                if (isNaN(price) || price < 0 || ticketPriceInput.value.trim() === '') price = 0;
+                const monthly = trips * price * 4.33;
+                const annual = monthly * 12;
+                monthlySavings.textContent = formatCurrency(monthly);
+                annualSavings.textContent = formatCurrency(annual);
+                if (feedbackText) {
+                    if (annual < 1000) {
+                        feedbackText.textContent = `Com essa economia anual de ${formatCurrency(annual)}, um morador cadastrado no SancaGov economiza o suficiente para um jantar especial com toda a família!`;
+                    } else if (annual < 2500) {
+                        feedbackText.textContent = `Com essa economia de ${formatCurrency(annual)} ao ano, dá para comprar um smartphone novinho e aproveitar todos os recursos do SancaGov com reconhecimento facial!`;
+                    } else if (annual < 5000) {
+                        feedbackText.textContent = `Economia incrível de ${formatCurrency(annual)} ao ano! Isso equivale a mais de 2 meses de salário mínimo economizados só em transporte como morador de SCS.`;
+                    } else {
+                        feedbackText.textContent = `Impressionante! ${formatCurrency(annual)} de economia anual! Uma família de São Caetano cadastrada no SancaGov pode investir esse valor em educação, saúde ou lazer.`;
+                    }
+                }
+            }
+
+            if (tripsRange && ticketPriceInput) {
+                tripsRange.addEventListener('input', updateCalculator);
+                ticketPriceInput.addEventListener('input', updateCalculator);
+                updateCalculator();
+            }
+
+            // ============================================
+            // 6. FAQ ACCORDION
+            // ============================================
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const btn = item.querySelector('.faq-question');
+                btn.addEventListener('click', () => {
+                    const wasOpen = btn.getAttribute('aria-expanded') === 'true';
+                    faqItems.forEach(f => {
+                        f.classList.remove('open');
+                        f.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!wasOpen) {
+                        item.classList.add('open');
+                        btn.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            // ============================================
+            // 7. SCROLL REVEAL (IntersectionObserver)
+            // ============================================
+            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "50px 0px" });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // ============================================
+            // 8. COUNTER ANIMATION
+            // ============================================
+            const counters = document.querySelectorAll('.counter-number');
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        el.classList.add('revealed-counter');
+                        const target = parseInt(el.getAttribute('data-target'));
+                        const suffix = el.getAttribute('data-suffix') || '';
+                        const prefix = el.getAttribute('data-prefix') || '';
+                        const display = el.getAttribute('data-display');
+                        
+                        // Se tem display fixo, mostra direto
+                        if (display) {
+                            el.textContent = display;
+                            counterObserver.unobserve(el);
+                            return;
+                        }
+                        
+                        if (target === 0) {
+                            el.textContent = prefix + '0' + suffix;
+                            counterObserver.unobserve(el);
+                            return;
+                        }
+                        
+                        const duration = 1800;
+                        const step = Math.ceil(target / (duration / 16));
+                        let current = 0;
+                        const timer = setInterval(() => {
+                            current = Math.min(current + step, target);
+                            el.textContent = prefix + current.toLocaleString('pt-BR') + suffix;
+                            if (current >= target) clearInterval(timer);
+                        }, 16);
+                        observer.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.2, rootMargin: "50px 0px" });
+
+            counters.forEach(c => counterObserver.observe(c));
+
+            // ============================================
+            // 9. ICON MICRO-ANIMATIONS ON SCROLL
+            // ============================================
+            const iconAnimElements = document.querySelectorAll('.icon-animate');
+            const iconObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                        setTimeout(() => {
+                            entry.target.classList.remove('animated');
+                        }, 600);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2, rootMargin: "50px 0px" });
+
+            iconAnimElements.forEach(el => iconObserver.observe(el));
+
+            // ============================================
+            // 10. ACTIVE NAV LINK ON SCROLL
+            // ============================================
+            const sections = document.querySelectorAll('section[id]');
+            const navLinksAll = document.querySelectorAll('.nav-link');
+            
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 120;
+                    if (window.scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinksAll.forEach(link => {
+                    link.style.color = '';
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.style.color = '#ffffff';
+                    }
+                });
+            });
+
+        });
     </script>
 </body>
 
