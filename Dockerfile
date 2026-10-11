@@ -1,4 +1,5 @@
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 COPY index.html style.css /usr/share/nginx/html/
+COPY img/ /usr/share/nginx/html/img/
 EXPOSE 80

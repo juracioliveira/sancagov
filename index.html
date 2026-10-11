@@ -7,11 +7,14 @@
     <title>SancaGov explicado | Guia independente para moradores de São Caetano do Sul</title>
     <meta name="description"
         content="Como fazer o cadastro no SancaGov, quem paga ônibus desde julho de 2026, o que a Justiça decidiu sobre saúde e escola, e os telefones úteis de São Caetano do Sul. Guia independente.">
-    <meta name="theme-color" content="#f5f2eb">
+    <meta name="theme-color" content="#f4f0e6">
+    <meta property="og:title" content="SancaGov, explicado sem rodeio">
+    <meta property="og:description" content="Cadastro, ônibus, saúde e escola: o que vale hoje em São Caetano do Sul.">
+    <meta property="og:image" content="img/cidade-verticalizacao.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -49,83 +52,59 @@
 
     <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-    <header class="topbar">
-        <div class="wrap topbar-inner">
-            <a href="#" class="wordmark">sancagov<span class="tld">.com.br</span></a>
-            <a class="topbar-cta" href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">
-                Portal oficial <span aria-hidden="true">↗</span>
-            </a>
-        </div>
-        <nav class="sections" aria-label="Seções da página">
-            <div class="wrap sections-inner">
-                <a href="#cadastro">Cadastro</a>
-                <a href="#onibus">Ônibus</a>
-                <a href="#justica">Saúde e escola</a>
-                <a href="#smart-sanca">Smart Sanca</a>
-                <a href="#cronologia">Cronologia</a>
-                <a href="#perguntas">Perguntas</a>
-                <a href="#contatos">Contatos</a>
+    <!-- Cabeçalho de jornal -->
+    <header class="masthead">
+        <div class="wrap">
+            <div class="mast-top">
+                <span>São Caetano do Sul, SP</span>
+                <span class="mast-mid">Guia independente · não é o site da Prefeitura</span>
+                <a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Portal oficial ↗</a>
             </div>
-        </nav>
+            <a href="#" class="nameplate" aria-label="sancagov.com.br, início">sancagov<span>.com.br</span></a>
+            <p class="mast-tag">O que muda para quem mora, estuda ou trabalha em São Caetano do Sul</p>
+        </div>
     </header>
+
+    <nav class="sections" aria-label="Seções da página">
+        <div class="wrap sections-inner">
+            <a href="#cadastro">Cadastro</a>
+            <a href="#onibus">Ônibus</a>
+            <a href="#justica">Saúde e escola</a>
+            <a href="#smart-sanca">Smart Sanca</a>
+            <a href="#cronologia">Cronologia</a>
+            <a href="#perguntas">Perguntas</a>
+            <a href="#servico">Serviço</a>
+        </div>
+    </nav>
 
     <main id="conteudo">
 
-        <!-- Abertura -->
-        <section class="intro">
-            <div class="wrap">
-                <p class="eyebrow">Guia independente para quem mora ou circula em São Caetano do Sul</p>
-                <h1>SancaGov, explicado sem rodeio.</h1>
-                <p class="lede">
-                    O SancaGov é o cadastro digital da Prefeitura. Ele liga você, pelo CPF e por uma foto do rosto,
-                    a serviços como ônibus, saúde e escola. Este guia diz o que vale hoje e o que fazer.
+        <!-- Primeira página -->
+        <section class="front wrap">
+            <article class="lead">
+                <p class="kicker">Cadastro digital</p>
+                <h1>SancaGov, explicado sem rodeio</h1>
+                <p class="deck">
+                    O cadastro da Prefeitura liga o morador, pelo CPF e por uma foto do rosto, a ônibus,
+                    saúde e escola. Desde julho, ele decide quem paga a passagem. Veja o que vale hoje
+                    e o que fazer.
                 </p>
-                <p class="notice">
-                    <strong>Este não é o site da Prefeitura.</strong>
-                    O cadastro oficial é feito em
-                    <a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">sancagov.saocaetanodosul.sp.gov.br</a>.
-                </p>
-            </div>
-        </section>
+                <figure class="photo photo-lead">
+                    <img src="img/cidade-verticalizacao.jpg"
+                        srcset="img/cidade-verticalizacao-640.jpg 640w, img/cidade-verticalizacao.jpg 1280w"
+                        sizes="(max-width: 960px) 100vw, 700px" width="1280" height="960"
+                        alt="Vista de São Caetano do Sul do alto, com casas de telhado vermelho em primeiro plano e prédios ao fundo.">
+                    <figcaption>
+                        São Caetano do Sul tem cerca de 172 mil moradores em 15,3&nbsp;km², a menor área entre os
+                        municípios do país.
+                        <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
+                    </figcaption>
+                </figure>
+            </article>
 
-        <!-- Atalhos por tarefa -->
-        <section class="tasks" aria-labelledby="tasks-title">
-            <div class="wrap">
-                <h2 class="label" id="tasks-title">O que você precisa?</h2>
-                <ul class="task-list">
-                    <li>
-                        <a href="#cadastro">
-                            <span class="task-q">Fazer meu cadastro</span>
-                            <span class="task-a">4 passos, pelo celular</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#onibus">
-                            <span class="task-q">Saber se pago ônibus</span>
-                            <span class="task-a">Responda 2 perguntas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#justica">
-                            <span class="task-q">O posto ou a escola podem exigir o cadastro?</span>
-                            <span class="task-a">Hoje, não</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contatos">
-                            <span class="task-q">Falar com alguém</span>
-                            <span class="task-a">Atendimento e emergência</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Situação atual -->
-        <section class="status" aria-labelledby="status-title">
-            <div class="wrap">
-                <h2 class="label" id="status-title">Como está hoje</h2>
-                <dl class="status-grid">
+            <aside class="rail" aria-labelledby="hoje-title">
+                <h2 class="rail-title" id="hoje-title">Como está hoje</h2>
+                <dl class="briefs">
                     <div>
                         <dt>Cadastro</dt>
                         <dd>Aberto a todos os moradores desde 8 de junho de 2026.</dd>
@@ -143,61 +122,122 @@
                         <dd>Atende Fácil, Rua Major Carlo Del Prete, 651, Centro.</dd>
                     </div>
                 </dl>
-            </div>
+
+                <h2 class="rail-title">Nesta página</h2>
+                <ol class="index">
+                    <li><a href="#cadastro"><span>Como fazer o cadastro</span><b>1</b></a></li>
+                    <li><a href="#onibus"><span>Você paga ônibus? Teste em 2 perguntas</span><b>2</b></a></li>
+                    <li><a href="#justica"><span>Posto e escola podem exigir o cadastro?</span><b>3</b></a></li>
+                    <li><a href="#smart-sanca"><span>O que é o Smart Sanca</span><b>4</b></a></li>
+                    <li><a href="#servico"><span>Telefones e endereços</span><b>7</b></a></li>
+                </ol>
+
+                <p class="rail-note">
+                    O cadastro oficial é feito só em
+                    <a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">sancagov.saocaetanodosul.sp.gov.br</a>.
+                </p>
+            </aside>
         </section>
 
-        <!-- Cadastro -->
-        <section class="block" id="cadastro">
-            <div class="wrap two-col">
-                <header class="block-head">
-                    <p class="kicker">01</p>
-                    <h2>Como se cadastrar</h2>
-                    <p class="block-sub">Leva poucos minutos. Tenha à mão o CPF e um comprovante de endereço.</p>
-                </header>
-                <div class="prose">
+        <!-- 1. Cadastro -->
+        <article class="story wrap" id="cadastro">
+            <header class="story-head">
+                <p class="kicker"><span class="num">1</span> Passo a passo</p>
+                <h2>Como fazer o cadastro, do celular, em poucos minutos</h2>
+                <p class="deck">Tenha à mão o CPF e um comprovante de endereço. Não é preciso ir a um posto.</p>
+            </header>
+            <div class="story-grid">
+                <div class="story-body">
                     <ol class="steps">
                         <li>
-                            <strong>Entre no site oficial</strong>
-                            <a href="https://sancagov.saocaetanodosul.sp.gov.br"
-                                rel="noopener">sancagov.saocaetanodosul.sp.gov.br</a>, pelo celular ou computador.
+                            <strong>Entre no site oficial.</strong>
+                            Acesse <a href="https://sancagov.saocaetanodosul.sp.gov.br"
+                                rel="noopener">sancagov.saocaetanodosul.sp.gov.br</a> pelo celular ou computador.
                         </li>
                         <li>
-                            <strong>Preencha seus dados</strong>
+                            <strong>Preencha seus dados.</strong>
                             CPF, endereço e informações pessoais. O sistema confere se você mora em São Caetano.
                         </li>
                         <li>
-                            <strong>Tire uma foto do rosto</strong>
-                            Pela câmera do celular, em lugar claro e sem óculos escuros ou boné.
-                            É ela que confirma que o cadastro é seu.
+                            <strong>Tire uma foto do rosto.</strong>
+                            Pela câmera do celular, em lugar claro, sem óculos escuros ou boné. É ela que confirma
+                            que o cadastro é seu.
                         </li>
                         <li>
-                            <strong>Aguarde a aprovação</strong>
-                            A liberação foi feita em fases: programas sociais (SEAIS), idosos dos CISEs,
-                            estudantes da rede municipal e bolsistas e, desde 8 de junho, todos os moradores.
+                            <strong>Aguarde a aprovação.</strong>
+                            A liberação foi feita em fases: programas sociais (SEAIS), idosos dos CISEs, estudantes
+                            da rede municipal e bolsistas e, desde 8 de junho, todos os moradores.
                         </li>
                     </ol>
-                    <p class="actions">
-                        <a class="button" href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Ir para o
-                            cadastro oficial</a>
-                        <span class="hint">Prefere ser atendido pessoalmente? <a href="#contatos">Veja o Atende
-                                Fácil</a>.</span>
-                    </p>
+                    <p><a class="button" href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Ir para o
+                            cadastro oficial</a></p>
                 </div>
+                <aside class="box">
+                    <p class="box-title">Sem celular ou sem jeito com a internet?</p>
+                    <p>O Atende Fácil faz o cadastro com você, pessoalmente.</p>
+                    <p><strong>Rua Major Carlo Del Prete, 651, Centro</strong><br>
+                        <a href="tel:1142328888">(11) 4232-8888</a></p>
+                </aside>
             </div>
-        </section>
+        </article>
 
-        <!-- Ônibus -->
-        <section class="block" id="onibus">
-            <div class="wrap two-col">
-                <header class="block-head">
-                    <p class="kicker">02</p>
-                    <h2>Você paga ônibus?</h2>
-                    <p class="block-sub">Regras do Tarifa Zero desde 15 de julho de 2026 (Decreto 12.285/2026).</p>
-                </header>
-                <div class="prose">
+        <!-- 2. Ônibus -->
+        <article class="story wrap" id="onibus">
+            <header class="story-head">
+                <p class="kicker"><span class="num">2</span> Tarifa Zero</p>
+                <h2>Desde julho, só o morador cadastrado anda de graça</h2>
+                <p class="deck">
+                    Com a gratuidade aberta a todos, os passageiros por dia passaram de cerca de 20 mil para 80 mil.
+                    O Decreto 12.285/2026 restringiu o benefício a partir de 15 de julho.
+                </p>
+            </header>
 
-                    <form class="checker" id="checker" aria-describedby="checker-help">
-                        <p id="checker-help" class="checker-help">Responda e veja o resultado na hora.</p>
+            <figure class="photo photo-wide">
+                <img src="img/av-goias-onibus.jpg"
+                    srcset="img/av-goias-onibus-640.jpg 640w, img/av-goias-onibus.jpg 1280w"
+                    sizes="(max-width: 1100px) 100vw, 1060px" width="1280" height="960" loading="lazy"
+                    alt="Ônibus municipal passando pela Avenida Goiás, com canteiro central florido e palmeiras.">
+                <figcaption>
+                    Avenida Goiás, um dos principais corredores de ônibus da cidade.
+                    <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
+                </figcaption>
+            </figure>
+
+            <div class="story-grid">
+                <div class="story-body">
+                    <p class="dropcap">
+                        Quem não mora em São Caetano, ou mora mas ainda não teve o cadastro aprovado, paga
+                        R$&nbsp;5,00 por viagem nos ônibus municipais. A regra tem exceções: alguns grupos continuam
+                        com gratuidade mesmo sem o SancaGov.
+                    </p>
+
+                    <h3 id="excecoes">Quem tem gratuidade sem o cadastro</h3>
+                    <ul class="columns">
+                        <li>Idosos a partir de 60 anos</li>
+                        <li>Servidores públicos de São Caetano</li>
+                        <li>Pacientes oncológicos em tratamento</li>
+                        <li>Forças de segurança uniformizadas e Tiro de Guerra</li>
+                        <li>Estudantes da USCS</li>
+                        <li>Estudantes da Fundação das Artes</li>
+                        <li>Estudantes do SESI e do SENAI</li>
+                        <li>Estudantes de ETEC e FATEC</li>
+                        <li>Estudantes do Instituto Mauá de Tecnologia</li>
+                        <li>Estudantes da Faculdade Paulista de Serviço Social</li>
+                    </ul>
+
+                    <h3 id="pedir-cartao">Não mora na cidade, mas está nas exceções?</h3>
+                    <p>Peça o cartão de gratuidade pelo Atende Fácil:</p>
+                    <ol class="mini-steps">
+                        <li>Entre em <a href="https://afweb.saocaetanodosul.sp.gov.br"
+                                rel="noopener">afweb.saocaetanodosul.sp.gov.br</a> e faça login.</li>
+                        <li>Clique em “Nova Solicitação” e escolha o departamento SEAIS.</li>
+                        <li>Selecione “cadastro de não moradores para aquisição de cartão de gratuidade”.</li>
+                    </ol>
+                </div>
+
+                <aside class="box box-checker">
+                    <form class="checker" id="checker" aria-labelledby="checker-title">
+                        <p class="box-title" id="checker-title">Teste: você paga ônibus?</p>
 
                         <fieldset data-step="mora">
                             <legend>Você mora em São Caetano do Sul?</legend>
@@ -216,7 +256,7 @@
                         </fieldset>
 
                         <fieldset data-step="excecao" hidden>
-                            <legend>Você se encaixa em alguma das exceções abaixo?</legend>
+                            <legend>Você está em alguma das <a href="#excecoes">exceções</a>?</legend>
                             <div class="choices">
                                 <label><input type="radio" name="excecao" value="sim"> Sim</label>
                                 <label><input type="radio" name="excecao" value="nao"> Não</label>
@@ -227,80 +267,55 @@
 
                         <button type="reset" class="link-button" id="checker-reset" hidden>Recomeçar</button>
                     </form>
-
-                    <h3 id="excecoes">Quem tem gratuidade mesmo sem o cadastro</h3>
-                    <ul class="columns">
-                        <li>Idosos a partir de 60 anos</li>
-                        <li>Servidores públicos de São Caetano</li>
-                        <li>Pacientes oncológicos em tratamento</li>
-                        <li>Forças de segurança uniformizadas e Tiro de Guerra</li>
-                        <li>Estudantes da USCS</li>
-                        <li>Estudantes da Fundação das Artes</li>
-                        <li>Estudantes do SESI e do SENAI</li>
-                        <li>Estudantes de ETEC e FATEC</li>
-                        <li>Estudantes do Instituto Mauá de Tecnologia</li>
-                        <li>Estudantes da Faculdade Paulista de Serviço Social</li>
-                    </ul>
-
-                    <div class="callout">
-                        <p class="callout-title">Não mora na cidade, mas está nas exceções?</p>
-                        <p>Peça o cartão de gratuidade pelo Atende Fácil:</p>
-                        <ol class="mini-steps">
-                            <li>Entre em <a href="https://afweb.saocaetanodosul.sp.gov.br"
-                                    rel="noopener">afweb.saocaetanodosul.sp.gov.br</a> e faça login.</li>
-                            <li>Clique em “Nova Solicitação” e escolha o departamento SEAIS.</li>
-                            <li>Selecione “cadastro de não moradores para aquisição de cartão de gratuidade”.</li>
-                        </ol>
-                    </div>
-
-                    <p class="aside-note">
-                        Por que mudou? Com a gratuidade aberta a todos, os passageiros por dia passaram de cerca de
-                        20 mil para 80 mil.
-                    </p>
-                </div>
+                </aside>
             </div>
-        </section>
+        </article>
 
-        <!-- Justiça -->
-        <section class="block" id="justica">
-            <div class="wrap two-col">
-                <header class="block-head">
-                    <p class="kicker">03</p>
-                    <h2>Saúde e escola</h2>
-                    <p class="block-sub">O que a Justiça decidiu.</p>
-                </header>
-                <div class="prose">
-                    <p class="answer">
-                        <strong>Ninguém pode negar atendimento de saúde ou vaga na escola municipal porque você não
-                            tem SancaGov.</strong>
+        <!-- 3. Justiça -->
+        <article class="story wrap" id="justica">
+            <header class="story-head">
+                <p class="kicker"><span class="num">3</span> Saúde e escola</p>
+                <h2>Posto e escola não podem exigir o cadastro</h2>
+                <p class="deck">A Justiça suspendeu a exigência para serviços universais. A decisão ainda é provisória.
+                </p>
+            </header>
+            <div class="story-grid">
+                <div class="story-body">
+                    <p class="dropcap">
+                        Em maio de 2026 o Tribunal de Justiça de São Paulo suspendeu, em caráter liminar, a exigência
+                        do SancaGov para saúde e educação, por serem serviços que a Constituição garante a todos.
+                        Em 8 de julho o Órgão Especial do TJSP negou o recurso da Prefeitura e manteve a liminar.
                     </p>
                     <p>
-                        Em maio de 2026 o Tribunal de Justiça de São Paulo suspendeu, em caráter liminar, a exigência
-                        do cadastro para saúde e educação, por serem serviços universais. Em 8 de julho o Órgão
-                        Especial do TJSP negou o recurso da Prefeitura e manteve a liminar. O processo ainda não terminou,
-                        e a regra pode mudar.
+                        O processo ainda não terminou, e a regra pode mudar. Para o Tarifa Zero, a exigência do
+                        cadastro continua valendo.
                     </p>
                     <p>
                         Quem tem o cadastro continua podendo usar as funções do aplicativo: prontuário, receitas e
                         vacinas, e notas e frequência dos filhos na rede municipal.
                     </p>
                 </div>
+                <blockquote class="pull">
+                    <p>Ninguém pode negar atendimento no posto ou vaga na escola municipal porque você não tem SancaGov.
+                    </p>
+                </blockquote>
             </div>
-        </section>
+        </article>
 
-        <!-- Smart Sanca -->
-        <section class="block" id="smart-sanca">
-            <div class="wrap two-col">
-                <header class="block-head">
-                    <p class="kicker">04</p>
-                    <h2>Smart Sanca</h2>
-                    <p class="block-sub">Central de monitoramento e emergências.</p>
-                </header>
-                <div class="prose">
-                    <p>
-                        Inaugurado em julho de 2025, reúne câmeras com reconhecimento facial e leitura de placas,
-                        viaturas da GCM com câmera e GPS, e trabalha junto com Polícia Militar, Defesa Civil,
-                        trânsito e saúde. Em emergência, ligue <a href="tel:08007000156">0800 7000 156</a>.
+        <!-- 4. Smart Sanca -->
+        <article class="story wrap" id="smart-sanca">
+            <header class="story-head">
+                <p class="kicker"><span class="num">4</span> Segurança</p>
+                <h2>Smart Sanca: a central que vigia a cidade 24 horas</h2>
+                <p class="deck">Inaugurada em julho de 2025, junta câmeras, leitura de placas e as forças de segurança
+                    num só lugar.</p>
+            </header>
+            <div class="story-grid story-grid-even">
+                <div class="story-body">
+                    <p class="dropcap">
+                        A central reúne câmeras com reconhecimento facial e leitura de placas (LPR), viaturas da GCM
+                        com câmera e GPS, e trabalha junto com Polícia Militar, Defesa Civil, trânsito e saúde.
+                        Em emergência, ligue <a href="tel:08007000156">0800 7000 156</a>.
                     </p>
 
                     <table class="figures">
@@ -322,36 +337,59 @@
                     </table>
 
                     <p>
-                        <strong>Tem condomínio ou comércio?</strong> Dá para ligar suas câmeras ao sistema pedindo pelo
-                        e-mail
+                        <strong>Tem condomínio ou comércio?</strong> Dá para ligar suas câmeras ao sistema pedindo
+                        pelo e-mail
                         <a href="mailto:suporte.smartsanca@saocaetanodosul.sp.gov.br">suporte.smartsanca@saocaetanodosul.sp.gov.br</a>.
                     </p>
-
-                    <h3>O que está anunciado</h3>
-                    <ul class="plain-list">
-                        <li><strong>Uma câmera por cruzamento até 2028.</strong> Cobertura de todos os cruzamentos da
-                            cidade.</li>
-                        <li><strong>Unidade 2.</strong> Segunda central no Parque Linear da Av. Presidente Kennedy.</li>
-                        <li><strong>Casa de Vidro.</strong> Réplica da central aberta ao público no ParkShopping São
-                            Caetano.</li>
-                        <li><strong>Programa Drenar.</strong> Mais piscinões e obras contra enchentes.</li>
-                    </ul>
+                </div>
+                <div class="story-side">
+                    <figure class="photo">
+                        <img src="img/av-goias.jpg" srcset="img/av-goias-640.jpg 640w, img/av-goias.jpg 1280w"
+                            sizes="(max-width: 960px) 100vw, 520px" width="1280" height="960" loading="lazy"
+                            alt="Ponto de ônibus coberto e prédio de fachada metálica na Avenida Goiás, com árvores na calçada.">
+                        <figcaption>
+                            Avenida Goiás.
+                            <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
+                        </figcaption>
+                    </figure>
+                    <div class="box">
+                        <p class="box-title">O que está anunciado</p>
+                        <ul class="plain-list">
+                            <li><strong>Uma câmera por cruzamento</strong> até 2028.</li>
+                            <li><strong>Unidade 2</strong> no Parque Linear da Av. Presidente Kennedy.</li>
+                            <li><strong>Casa de Vidro</strong>, réplica da central aberta ao público no ParkShopping
+                                São Caetano.</li>
+                            <li><strong>Programa Drenar</strong>, com mais piscinões contra enchentes.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <!-- Cronologia -->
-        <section class="block" id="cronologia">
-            <div class="wrap two-col">
-                <header class="block-head">
-                    <p class="kicker">05</p>
-                    <h2>Cronologia</h2>
+        <!-- Foto de respiro -->
+        <figure class="photo photo-band">
+            <img src="img/parque-chico-mendes.jpg"
+                srcset="img/parque-chico-mendes-640.jpg 640w, img/parque-chico-mendes.jpg 1280w" sizes="100vw"
+                width="1280" height="960" loading="lazy"
+                alt="Parque Ecológico Chico Mendes visto do alto, com gramados, caminhos curvos e muitas árvores.">
+            <figcaption class="wrap">
+                Parque Ecológico Chico Mendes.
+                <span class="credit">Foto: Lukaaz / Wikimedia Commons, CC BY-SA 3.0</span>
+            </figcaption>
+        </figure>
+
+        <!-- 5 e 6. Cronologia e perguntas -->
+        <div class="pair wrap">
+            <section class="story story-plain" id="cronologia">
+                <header class="story-head">
+                    <p class="kicker"><span class="num">5</span> Cronologia</p>
+                    <h2>Como chegamos aqui</h2>
                 </header>
                 <ol class="timeline">
                     <li>
                         <time datetime="2025-01">Jan 2025</time>
-                        <p>Tite Campanella assume a Prefeitura (mandato 2025–2028) e põe a digitalização dos serviços
-                            entre as prioridades.</p>
+                        <p>Tite Campanella assume a Prefeitura (2025–2028) e põe a digitalização dos serviços entre as
+                            prioridades.</p>
                     </li>
                     <li>
                         <time datetime="2025-07">Jul 2025</time>
@@ -363,7 +401,7 @@
                     </li>
                     <li>
                         <time datetime="2026-05">Mai 2026</time>
-                        <p>TJSP suspende por liminar a exigência do SancaGov para saúde e educação.</p>
+                        <p>TJSP suspende por liminar a exigência do cadastro para saúde e educação.</p>
                     </li>
                     <li>
                         <time datetime="2026-06-08">8 jun 2026</time>
@@ -375,18 +413,15 @@
                     </li>
                     <li>
                         <time datetime="2026-07-15">15 jul 2026</time>
-                        <p>Tarifa Zero passa a valer só para moradores cadastrados e exceções (Decreto 12.285/2026).</p>
+                        <p>Tarifa Zero passa a valer só para moradores cadastrados e exceções.</p>
                     </li>
                 </ol>
-            </div>
-        </section>
+            </section>
 
-        <!-- Perguntas -->
-        <section class="block" id="perguntas">
-            <div class="wrap two-col">
-                <header class="block-head">
-                    <p class="kicker">06</p>
-                    <h2>Perguntas frequentes</h2>
+            <section class="story story-plain" id="perguntas">
+                <header class="story-head">
+                    <p class="kicker"><span class="num">6</span> Perguntas</p>
+                    <h2>Dúvidas dos leitores</h2>
                 </header>
                 <div class="faq">
                     <details>
@@ -395,7 +430,7 @@
                             aberto a todos, pelo site oficial.</p>
                     </details>
                     <details>
-                        <summary>Preciso do SancaGov para ir ao posto de saúde ou matricular meu filho?</summary>
+                        <summary>Preciso do SancaGov para ir ao posto ou matricular meu filho?</summary>
                         <p>Não, por enquanto. A liminar do TJSP impede que o cadastro seja exigido para saúde e
                             educação. Ele continua exigido para o Tarifa Zero.</p>
                     </details>
@@ -412,7 +447,7 @@
                     </details>
                     <details>
                         <summary>Estudo em São Caetano, mas moro em outra cidade. Pago ônibus?</summary>
-                        <p>Depende da instituição. Estudantes das escolas listadas em
+                        <p>Depende da instituição. Estudantes das escolas listadas nas
                             <a href="#excecoes">exceções</a> continuam com gratuidade, mas precisam pedir o cartão pelo
                             Atende Fácil.</p>
                     </details>
@@ -422,30 +457,31 @@
                             Para saber em que pé está o pedido, procure o Atende Fácil.</p>
                     </details>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- Contatos -->
-        <section class="contacts" id="contatos" aria-labelledby="contatos-title">
+        <!-- 7. Serviço -->
+        <section class="service" id="servico" aria-labelledby="servico-title">
             <div class="wrap">
-                <h2 class="contacts-title" id="contatos-title">Contatos</h2>
-                <div class="contacts-grid">
+                <p class="kicker"><span class="num">7</span> Serviço</p>
+                <h2 id="servico-title">Telefones e endereços</h2>
+                <div class="service-grid">
                     <div>
-                        <h3 class="label">Emergência</h3>
+                        <h3>Emergência</h3>
                         <ul class="phones">
                             <li><span>GCM</span><a href="tel:153">153</a></li>
                             <li><span>Smart Sanca</span><a href="tel:08007000156">0800 7000 156</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="label">Atendimento</h3>
+                        <h3>Atendimento</h3>
                         <ul class="phones">
                             <li><span>Atende Fácil</span><a href="tel:1142328888">(11) 4232-8888</a></li>
                         </ul>
                         <p class="address">Rua Major Carlo Del Prete, 651, Centro</p>
                     </div>
                     <div>
-                        <h3 class="label">Sites oficiais</h3>
+                        <h3>Sites oficiais</h3>
                         <ul class="links">
                             <li><a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">Portal SancaGov</a>
                             </li>
@@ -463,11 +499,16 @@
 
     <footer class="footer">
         <div class="wrap">
+            <p class="footer-name">sancagov<span>.com.br</span></p>
             <p>
-                <strong>sancagov.com.br</strong> é um guia independente, sem vínculo com a Prefeitura de
-                São Caetano do Sul. As informações vêm de fontes públicas e da imprensa e podem mudar.
-                Antes de decidir qualquer coisa, confira no
+                Guia independente, sem vínculo com a Prefeitura de São Caetano do Sul. As informações vêm de fontes
+                públicas e da imprensa e podem mudar. Antes de decidir qualquer coisa, confira no
                 <a href="https://sancagov.saocaetanodosul.sp.gov.br" rel="noopener">portal oficial</a>.
+            </p>
+            <p>
+                Fotos: Lukaaz, via Wikimedia Commons, sob licença
+                <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pt-br" rel="noopener license">CC BY-SA
+                    3.0</a>. Cores e contraste levemente ajustados.
             </p>
             <p>&copy; 2026 sancagov.com.br · <a href="#">Voltar ao topo</a></p>
         </div>
@@ -489,7 +530,7 @@
                 pendente: ['no', 'Por enquanto, você paga R$ 5,00.',
                     'A gratuidade começa quando o cadastro for aprovado, a não ser que você esteja nas exceções. ' + CADASTRO + '.'],
                 excecao: ['yes', 'Você mantém a gratuidade.',
-                    'Estudantes e pacientes oncológicos que não moram na cidade precisam pedir o cartão de gratuidade. Veja como logo abaixo.'],
+                    'Estudantes e pacientes oncológicos que não moram na cidade precisam pedir o cartão de gratuidade. <a href="#pedir-cartao">Veja como pedir</a>.'],
                 paga: ['no', 'Você paga R$ 5,00 por viagem.',
                     'Indo e voltando cinco dias por semana, dá cerca de R$ 217 por mês.']
             };
